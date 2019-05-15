@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web: gunicorn data_loading_fast:server
