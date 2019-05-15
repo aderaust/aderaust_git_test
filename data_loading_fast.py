@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 from scipy import stats
 import seaborn as sns
 import scipy.special
-from statsmodels.stats import weightstats as stests
 
 import plotly.tools as tls
 # get_ipython().run_line_magic('matplotlib', 'inline')
