@@ -12,7 +12,7 @@ import seaborn as sns
 import scipy.special
 
 import plotly.tools as tls
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 import plotly.graph_objs as go
 
