@@ -1027,9 +1027,9 @@ def multi_teacher_stat_data(teacher_input_dropdown, course_input_dropdown):
         
         
         
-        mean_std_ratio = np.array(relavent_teacher_mean) / np.array(easy_stds).tolist()
+        mean_std_ratio = np.array(relavent_teacher_mean) / np.array(easy_stds)
         
-        mean_std_ratio_rank = np.argmax(mean_std_ratio)[::-1]
+        mean_std_ratio_rank = np.argmax(mean_std_ratio)[::-1].tolist()
 
 
         # final_ratio = np.round(mean_std_ratio / np.max(mean_std_ratio), 2).tolist()
