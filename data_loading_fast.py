@@ -566,7 +566,7 @@ multi_mean_bootstrapper(['AYLIN ALIN', 'AARON C HENSLEY'], ['STT_315']) # lower 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
-app = dash.Dash(external_stylesheets= external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets= external_stylesheets)
 
 server = app.server
 
