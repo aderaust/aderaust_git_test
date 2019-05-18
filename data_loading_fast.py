@@ -247,7 +247,7 @@ def std_bootstrapper(teacher_input = None, course_input = None):
                                         for i in range(2500)])
         
         
-        mean_of_std = np.round(np.mean(boot_strapped_stds), 3)
+        mean_of_std = np.round(np.mean(boot_strapped_stds), 2)
         
 #         sigma_of_bootstrap = np.std(boot_strapped_means)
         
@@ -291,7 +291,7 @@ def multi_std_bootstrapper(teacher_input, course_input):
 
             # math for calculating CI for specific course and teacher
 
-            mean_of_std = np.round(np.mean(boot_strapped_stds), 3)
+            mean_of_std = np.round(np.mean(boot_strapped_stds), 2)
 
 
 
@@ -302,7 +302,7 @@ def multi_std_bootstrapper(teacher_input, course_input):
         
         return golden_list_of_stds
 
-    
+multi_std_bootstrapper(['CHRISTIAN GOULDING'], 'FI_311')
 
 
 # ## mean
@@ -468,7 +468,7 @@ def multi_mean_bootstrapper(teacher_input, course_input):
 
             boot_strapped_means = np.array([np.mean(
                 np.random.choice(gpa_dist, size = 100, p = specific_course_and_teacher_prob))
-                                            for i in range(5000)])
+                                            for i in range(2500)])
 
             # math for calculating CI for specific course and teacher
 
@@ -568,8 +568,6 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(external_stylesheets= external_stylesheets)
 
-server = app.server
-
 
 
 app.config['suppress_callback_exceptions']=True
@@ -618,10 +616,10 @@ all_msu_ratio = np.round(all_msu_mean / .878, 2)
 
 
 default_table_dic = {'Teacher': ["All MSU"],
-                      'Rank (Mean / σ)' : [None],
+                      'Rank: MAX(Mean / σ)' : [None],
                      'Simulated Mean GPA' : [all_msu_mean],
-                     'Simulated σ GPA' : [.878],
-                     '95% Mean GPA' : [(np.round(all_msu_ci[0], 2), " - ", np.round(all_msu_ci[1], 2))]
+                     'Simulated σ GPA' : [.88],
+                     '95% Mean GPA CI' : [(np.round(all_msu_ci[0], 2), " - ", np.round(all_msu_ci[1], 2))]
                     }
 
 
@@ -697,7 +695,40 @@ time_fig = go.Figure(all_msu_time_graph, all_msu_layout)
 # py.offline.iplot(time_fig)
 
 
+# ## description layout
+
 # In[27]:
+
+
+description_layout  = [html.H2('Purpose'),
+                     html.Label('MSU Optimize allows you to easily compare GPA distributions among teachers and make competitive decisions for your GPA.'),
+                     html.H2('Value Add'), html.H4('1. Exhaustive, Cumulative Distributions'),
+                     html.Label('Since Fall of 2011, MSU has been required to record GPA distributions for every course offered at MSU.  In order to fully take advantage of this data, this application cumulates every probability distribution available for each unique professor and course.'),
+                     html.H6('Example'),
+                     html.Label('If John Smith taught MSU_101 in Fall of 2015  then again in Spring 2019, his GPA distributions will differ but be similar in nature.'),
+                     html.Img(src = app.get_asset_url('ReadMe Fall Smith.png')), html.Img(src = app.get_asset_url('ReadMe Spring Smith.png')),
+                     html.Img(src = app.get_asset_url('ReadMe Combined Smith.png')),
+                     html.H4('2. Course Mean and Standard Deviation Estimation through Simulation'),
+                     html.Label('The distributions above are interesting, but they do not offer any useful or practical statistical properties. What’s more, the difficulty of comparing such oddly shaped distributions for more and more instructors only compounds. '),
+                     html.H6(''),
+                     html.Label('Random sampling through Bootstrapping is a technique that allows one to generate many random samples from one instructor’s GPA distribution. This app randomly takes 100 samples 2,500 times from a teacher’s exhaustive GPA probability distribution, like above, then calculates the mean of these 2,500 samples to form a distribution of means. From the central limit theorem, this distribution will be approximately normal. This allows us to easily and visually compare the distributions of different instructors teaching the same course.'),
+                     html.Img(src = app.get_asset_url('readme bootstrap.png')),
+                     html.Label('As you can see from the plot, Smith’s bootstrapped mean GPA distribution for MSU_101 is approximately normal. The horizontal red lines represent a 95% confidence interval for where his true mean GPA lies. In laymen’s terms, this is roughly interpreted as “the mean GPA of 95% of the random samples from Smith’s MSU_101 original distribution will fall between 3.3 to 3.6”. This process of iteratively random sampling and calculating descriptive statistics can also be completed for other statistics such as standard deviation.'),
+                     html.H6(''),
+                     html.Label('To find the best estimate for a course’s standard deviation or sigma, one samples the exhaustive distribution above 2,500 times, just like above, but instead of calculating the mean each sample, one calculates the standard deviation 2,500 times. After 2,500 times the average standard deviation of all samples is the most accurate sigma or standard deviation.'),
+                     html.H4('3. Optimization/Rank Methodology'),
+                     html.Label('Putting these techniques together, one can be left with the best estimate for an instructors mean GPA and standard deviation. Taking the ratio of their mean and standard deviation allows one to take into account both parameters of a instructors GPA distribution when making a course decision. For instance, one instructor could have a higher historical mean, however, if they have a large standard deviation, the course could be considered not as attractive because of risk for a low grade. '),
+                     html.H6(''),
+                     html.Label('Below is a fictitious example of the rank ratio being put to use. The teacher in the second row is actually ranked above the teacher in the third row, even with a lower mean, because teacher two has a lower course mean standard deviation.'),
+                     html.Img(src = app.get_asset_url('readme_ranktable.png'), width = '70%', height = '70%'),
+                     html.H4('4. Course/Instructor Time-Series Analysis'),
+                     html.Label('This dashboard also allows you to observe how overall courses and individual instructors mean GPAs have trended over each semester.')
+                      ]
+
+
+# ## Markdown
+
+# In[28]:
 
 
 # formatting app
@@ -705,7 +736,7 @@ time_fig = go.Figure(all_msu_time_graph, all_msu_layout)
 
 app.layout = html.Div(id = "all_app", children =[
     html.H1("MSU Optimize"),
-    html.Label('Choose a Course to Analyze'),
+    html.Div([dcc.Tabs(id = 'tabs', children = [dcc.Tab(label = 'Course Analysis', children = [html.Label('Choose a Course to Analyze'),
     
     dcc.Dropdown(id = "course_input_dropdown",
     options = course_dic_list, style = dict(width = "68%")),
@@ -727,7 +758,7 @@ app.layout = html.Div(id = "all_app", children =[
     dash_table.DataTable(id = 'ci_table', data = default_table_df.to_dict('records'),
                         columns = default_column_labels, sorting=True, sorting_type="multi",
                             style_data_conditional=[{
-        'if': {'column_id': 'Rank (Mean / σ)'},
+        'if': {'column_id': 'Rank: MAX(Mean / σ)'},
         'backgroundColor': '#3D9970',
         'color': 'white',
     }]),
@@ -735,12 +766,19 @@ app.layout = html.Div(id = "all_app", children =[
     
     dcc.Graph(id = 'time_series_graph', figure = time_fig,
              config = {'staticPlot': True})
-])
+
+                                                                           ]
+                                              ),
+                                      dcc.Tab(label = 'Description', children = description_layout)
+                                     ]
+            )])
+]
+                     )
 
 
 
 
-# In[28]:
+# In[29]:
 
 
 
@@ -783,6 +821,9 @@ all_normalized_dists_easy = np.array(all_normalized_dists_easy)
 
 
 
+
+
+
 def fill_dropdown_menu(update_teacher_value):
 #     update_teacher_value = update_teacher_value['layout']['title']['text']
     intermediate_teacher_index = np.where(all_normalized_dists_easy == update_teacher_value)[0]    
@@ -803,7 +844,7 @@ def fill_dropdown_menu(update_teacher_value):
 
 
 
-# In[29]:
+# In[30]:
 
 
 @app.callback(
@@ -882,7 +923,7 @@ def multi_teacher_fig_bind(teacher_input_dropdown, course_input_dropdown):
         return  teach_fig 
 
 
-# In[30]:
+# In[31]:
 
 
 
@@ -893,7 +934,7 @@ def update(reset):
     if reset > 0:
         return [
     html.H1("MSU Optimize"),
-    html.Label('Choose a Course to Analyze'),
+    dcc.Tabs(id = 'tabs', children = [dcc.Tab(label = 'Course Analysis', children = [html.Label('Choose a Course to Analyze'),
     
     dcc.Dropdown(id = "course_input_dropdown",
     options = course_dic_list, style = dict(width = "68%")),
@@ -907,13 +948,15 @@ def update(reset):
     
     html.Button('New Course !',id='reset_button'),
     
+   
+    
     dcc.Graph(id = 'course_graph', figure = fig,
              config = {'staticPlot': True}),
 
     dash_table.DataTable(id = 'ci_table', data = default_table_df.to_dict('records'),
                         columns = default_column_labels, sorting=True, sorting_type="multi",
                             style_data_conditional=[{
-        'if': {'column_id': 'Rank (Mean / σ)'},
+        'if': {'column_id': 'Rank: MAX(Mean / σ)'},
         'backgroundColor': '#3D9970',
         'color': 'white',
     }]),
@@ -921,18 +964,26 @@ def update(reset):
     
     dcc.Graph(id = 'time_series_graph', figure = time_fig,
              config = {'staticPlot': True})
+
+                                                                           ]
+                                              ),
+                                      dcc.Tab(label = 'Description', children = description_layout)
+                                     ]
+            )
 ]
     
     
 
 
-# In[31]:
+# In[32]:
 
 
 @app.callback(
     Output('ci_table', 'data'),
     [Input('teacher_input_dropdown', 'value'),
      Input('course_input_dropdown', 'value')])
+
+
 
 def multi_teacher_stat_data(teacher_input_dropdown, course_input_dropdown):
     
@@ -961,10 +1012,10 @@ def multi_teacher_stat_data(teacher_input_dropdown, course_input_dropdown):
     
 
         teacher_table_dic = [{'Teacher': [course_input_dropdown],
-                             '95% Mean GPA' : [(np.round(course_ci[0], 2), " - ",
+                             '95% Mean GPA CI' : [(np.round(course_ci[0], 2), " - ",
                               np.round(course_ci[1], 2))],
                               'Simulated Mean GPA' : [np.round(np.mean(course_data), 3)],
-                              'Simulated σ GPA' : [np.round(course_std, 3)]
+                              'Simulated σ GPA' : [np.round(course_std, 2)]
                              }]
     
     
@@ -1029,14 +1080,16 @@ def multi_teacher_stat_data(teacher_input_dropdown, course_input_dropdown):
         
         mean_std_ratio = np.array(relavent_teacher_mean) / np.array(easy_stds)
         
-        mean_std_ratio_rank = np.argmax(mean_std_ratio)[::-1].tolist()
-
-
-        # final_ratio = np.round(mean_std_ratio / np.max(mean_std_ratio), 2).tolist()
+        sorted_mean_std_ratio = np.argsort(mean_std_ratio)[::-1].argsort() + 1
+        
+        final_ratio = sorted_mean_std_ratio.tolist()
+        
+        
+        
         
         teacher_table_dic = {'Teacher': teacher_input_dropdown,
-                             'Rank (Mean / σ)' : mean_std_ratio_rank,
-                             '95% Mean GPA' : teacher_ci_tuple,
+                             'Rank: MAX(Mean / σ)' : final_ratio,
+                             '95% Mean GPA CI' : teacher_ci_tuple,
                              'Simulated Mean GPA' : relavent_teacher_mean,
                              'Simulated σ GPA' : easy_stds
 
@@ -1049,12 +1102,17 @@ def multi_teacher_stat_data(teacher_input_dropdown, course_input_dropdown):
         
         teacher_table_df = pd.DataFrame(teacher_table_dic)
         
+        
+        teacher_table_df.sort_values(by = ['Rank: MAX(Mean / σ)'], inplace=True) 
+        
+        
+        
         final_teacher_dic = teacher_table_df.to_dict('records')
 
         return  final_teacher_dic 
 
 
-# In[32]:
+# In[33]:
 
 
 @app.callback(
@@ -1236,6 +1294,12 @@ def time_mean_data_getter(teacher_inputs = None, course_input = None):
 
 
 # In[ ]:
+
+
+
+
+
+# In[35]:
 
 
 if __name__ == '__main__':
