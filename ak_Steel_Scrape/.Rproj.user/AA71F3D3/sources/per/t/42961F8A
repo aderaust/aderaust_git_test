@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563665109011.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2726458463",
+    "id" : "42961F8A",
+    "lastKnownWriteTime" : 1565653472,
+    "last_content_update" : 1565653472448,
+    "path" : "~/ISLR/Regression Excersize.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "100,0",
+        "scrollLine" : "79",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

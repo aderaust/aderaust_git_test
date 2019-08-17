@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1562886629360.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2260859404",
+    "id" : "F6DFA46F",
+    "lastKnownWriteTime" : 1565653472,
+    "last_content_update" : 1565653472373,
+    "path" : "~/ak_Steel_Scrape/Linear_model.R",
+    "project_path" : "Linear_model.R",
+    "properties" : {
+        "cursorPosition" : "36,0",
+        "scrollLine" : "11",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,2283 @@
+
+
+<HTML>
+<HEAD>
+<title>ArcelorMittal - PartnerCentre </title>
+</HEAD>
+<FORM method="post" action="inv4sale_InvConsReport.asp" name="inv4Sale">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td colspan="1" width="100%">
+					<table border="0" cellpadding="1" cellspacing="1" width="100%" class="tbI4Sheader">
+						<tr>
+						<td width="100%" align="CENTER" colspan="13"><BR><B>Online Inventory for Sale<BR>View Inventory Consolidated Report<BR>View inventory for: TARGET STEEL</B><BR>as of 8/17/2019 01:32
+						</td>
+						</tr>
+					</table>
+					<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<TR>
+<TH colspan="13" align="center"><BIG>Sorted by&nbsp;Minor Product, Business Unit, Category, Gauge, Width, Weight, Location, Grade
+</BIG></TH>
+</TR>
+						<tr>
+<TH NOWRAP width="100px" align="center">Piece ID / Ref#</TH>
+<TH width="50PX" align="center">Minor Product</TH>
+<TH width="50PX" align="center">Business Unit</TH>
+<TH width="50PX" align="center">Category</TH>
+<TH width="50PX" title="inches" align="center">Gauge</TH>
+<TH width="50PX" title="inches" align="center">Width</TH>
+<TH width="50PX" title="pounds" align="center">Weight</TH>
+<TH width="50PX" align="center">Location</TH>
+<TH width="50PX" align="center">Grade</TH>
+<TH width="50PX" align="center">Chemistry</TH>
+<TH width="50PX" align="center">Comment</TH>
+<TH width="50PX" align="center">Defect</TH>
+<TH width="50PX" align="center">Trans#</TH>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;872726701 / Y3569694T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">54.9999
+							</TD>
+							<TD valign="TOP" align="center">030250
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.18 S: .005 P: .017 SI: .150 CB: .001 V: .001 AL: .042 TI: .001 NI: .010 CR: .020 MO: .000 N: .003 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">AGED COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;286617608 / 842A3552051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0378
+							</TD>
+							<TD valign="TOP" align="center">22.0590
+							</TD>
+							<TD valign="TOP" align="center">004307
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .006 P: .009 SI: .010 CB: .002 V: .001 AL: .036 TI: .002 NI: .010 CR: .020 MO: .012 N: .004 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR DROP CUT PER CHARLO
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;00498798102Z01 / 823C7492053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010218
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .100 MN: .97 S: .003 P: .011 SI: .291 CB: .002 V: .001 AL: .049 TI: .002 NI: .010 CR: .030 MO: .009 N: .006 CU: .024
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;00498796102Z01 / 821D0467053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010384
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .100 MN: .97 S: .003 P: .012 SI: .305 CB: .003 V: .002 AL: .049 TI: .002 NI: .010 CR: .030 MO: .009 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;00498797102Z01 / 823C7491056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010443
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .080 MN: .93 S: .003 P: .010 SI: .291 CB: .002 V: .001 AL: .044 TI: .002 NI: .010 CR: .020 MO: .007 N: .005 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;291057008 / 813C6826008A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0453
+							</TD>
+							<TD valign="TOP" align="center">23.9744
+							</TD>
+							<TD valign="TOP" align="center">005575
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">HR230CD
+							</TD>
+							<TD valign="TOP" align="center">C: .110 MN:1.05 S: .004 P: .014 SI: .284 CB: .002 V: .001 AL: .050 TI: .002 NI: .010 CR: .030 MO: .004 N: .006 CU: .026
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR OFF FALL PER CHARLO
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;9021694 / Y2267364T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0551
+							</TD>
+							<TD valign="TOP" align="center">14.4600
+							</TD>
+							<TD valign="TOP" align="center">006958
+							</TD>
+							<TD valign="TOP" align="center">HORIZON-SHELBY TOWNSHIP
+							</TD>
+							<TD valign="TOP" align="center">GM03012
+							</TD>
+							<TD valign="TOP" align="center">C: .097 MN:1.52 S: .004 P: .018 SI: .190 CB: .001 V: .001 AL: .037 TI: .001 NI: .010 CR: .150 MO: .098 N: .004 CU: .011
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;288070409 / 841V0995053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0606
+							</TD>
+							<TD valign="TOP" align="center">52.0196
+							</TD>
+							<TD valign="TOP" align="center">013150
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .030 MN: .16 S: .005 P: .011 SI: .008 CB: .002 V: .001 AL: .030 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">RESELL COIL
+							</TD>
+							<TD valign="TOP" align="center">AGED COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;288070411 / 841V0995053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0606
+							</TD>
+							<TD valign="TOP" align="center">69.8424
+							</TD>
+							<TD valign="TOP" align="center">009185
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .030 MN: .16 S: .005 P: .011 SI: .008 CB: .002 V: .001 AL: .030 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">RESELL COIL
+							</TD>
+							<TD valign="TOP" align="center">AGED COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;B832207A / Y2147716T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0906
+							</TD>
+							<TD valign="TOP" align="center">51.9684
+							</TD>
+							<TD valign="TOP" align="center">018030
+							</TD>
+							<TD valign="TOP" align="center">ARLINGTON METALS CORP-SAWYER
+							</TD>
+							<TD valign="TOP" align="center">TY02012
+							</TD>
+							<TD valign="TOP" align="center">C: .094 MN:1.81 S: .004 P: .015 SI: .240 CB: .002 V: .002 AL: .048 TI: .001 NI: .010 CR: .280 MO: .001 N: .002 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">RESELL AGED COIL WITH POSSIBLE
+							</TD>
+							<TD valign="TOP" align="center">AGED COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T42616 / 823E6527052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0237
+							</TD>
+							<TD valign="TOP" align="center">64.7500
+							</TD>
+							<TD valign="TOP" align="center">51600
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .056 MN: .68 S: .004 P: .012 SI: .256 CB: .045 V: .002 AL: .030 TI: .002 NI: .010 CR: .030 MO: .007 N: .005 CU: .031
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)GEN BAD SHAPE 2)PINCHERS(STRIP) 3)BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T387582 / 843E6236051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0240
+							</TD>
+							<TD valign="TOP" align="center">61.6875
+							</TD>
+							<TD valign="TOP" align="center">41860
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .056 MN: .67 S: .004 P: .016 SI: .265 CB: .047 V: .002 AL: .029 TI: .002 NI: .010 CR: .040 MO: .008 N: .005 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)ROLL SLUG MK TM 2)HOLES
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T412211 / 841H0360054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0251
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">17630
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .21 S: .008 P: .022 SI: .007 CB: .010 V: .001 AL: .054 TI: .002 NI: .010 CR: .020 MO: .003 N: .002 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T226961 / 841C1170052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">64.3750
+							</TD>
+							<TD valign="TOP" align="center">34210
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .23 S: .004 P: .024 SI: .007 CB: .011 V: .001 AL: .070 TI: .002 NI: .010 CR: .020 MO: .013 N: .002 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)HOLES 2)ANODE BURN 3)OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T226802 / 843C7495052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">19780
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .25 S: .005 P: .022 SI: .007 CB: .011 V: .001 AL: .066 TI: .002 NI: .020 CR: .020 MO: .011 N: .002 CU: .031
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OPEN SLIVERS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T411442 / 842H3273055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0253
+							</TD>
+							<TD valign="TOP" align="center">66.2500
+							</TD>
+							<TD valign="TOP" align="center">27080
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .002 MN: .09 S: .007 P: .011 SI: .005 CB: .002 V: .003 AL: .064 TI: .053 NI: .010 CR: .020 MO: .006 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)RED RUST-SPKLD 2)RED RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T41190 / 831H0155002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">55.2500
+							</TD>
+							<TD valign="TOP" align="center">38890
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T41193 / 831H0155003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">55.2500
+							</TD>
+							<TD valign="TOP" align="center">39480
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T4117113 / 832H3108004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">18970
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .008 MN: .25 S: .006 P: .053 SI: .005 CB: .002 V: .001 AL: .065 TI: .002 NI: .010 CR: .030 MO: .012 N: .004 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T4118021 / 841H0155055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">23160
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T42272122 / 841H0553055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0255
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">20700
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .012 MN: .23 S: .005 P: .055 SI: .005 CB: .002 V: .001 AL: .059 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .014
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RED RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T4174622 / 831H0154002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0276
+							</TD>
+							<TD valign="TOP" align="center">56.6875
+							</TD>
+							<TD valign="TOP" align="center">18580
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .014 MN: .24 S: .007 P: .050 SI: .005 CB: .002 V: .001 AL: .058 TI: .002 NI: .010 CR: .030 MO: .006 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T42634 / 832H3499005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0295
+							</TD>
+							<TD valign="TOP" align="center">46.6250
+							</TD>
+							<TD valign="TOP" align="center">34920
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .050 MN: .67 S: .004 P: .007 SI: .257 CB: .046 V: .001 AL: .035 TI: .002 NI: .010 CR: .020 MO: .006 N: .005 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)CAR EDGE PATCH 2)RED RUST-PATCHS 3)BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;N28866 / 823H6763055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0314
+							</TD>
+							<TD valign="TOP" align="center">56.1875
+							</TD>
+							<TD valign="TOP" align="center">22950
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .088 MN:1.51 S: .002 P: .012 SI: .303 CB: .002 V: .001 AL: .048 TI: .002 NI: .010 CR: .030 MO: .005 N: .006 CU: .026
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">CHTL BUCKLES
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;D028021 / 823C6794056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0400
+							</TD>
+							<TD valign="TOP" align="center">46.1875
+							</TD>
+							<TD valign="TOP" align="center">15660
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/4 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN: .48 S: .008 P: .011 SI: .007 CB: .002 V: .001 AL: .041 TI: .002 NI: .010 CR: .020 MO: .008 N: .006 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">1/4 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">QUARTER BUCKLE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T40867 / 843E7112054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0744
+							</TD>
+							<TD valign="TOP" align="center">58.1875
+							</TD>
+							<TD valign="TOP" align="center">23305
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .079 MN: .72 S: .003 P: .013 SI: .273 CB: .050 V: .002 AL: .043 TI: .002 NI: .020 CR: .040 MO: .007 N: .004 CU: .033
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)SLACK ANNEAL 2)GEN BAD SHAPE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T412872 / 831H0605005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.1328
+							</TD>
+							<TD valign="TOP" align="center">48.1875
+							</TD>
+							<TD valign="TOP" align="center">15170
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .039 MN: .15 S: .005 P: .004 SI: .006 CB: .002 V: .001 AL: .033 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T342611 / 823E6530051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0242
+							</TD>
+							<TD valign="TOP" align="center">64.0625
+							</TD>
+							<TD valign="TOP" align="center">30860
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .054 MN: .65 S: .003 P: .010 SI: .244 CB: .044 V: .002 AL: .032 TI: .002 NI: .010 CR: .030 MO: .006 N: .006 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T441422 / 841H0628054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0251
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">55050
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .22 S: .007 P: .024 SI: .008 CB: .012 V: .001 AL: .067 TI: .002 NI: .010 CR: .020 MO: .004 N: .003 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)CARRYOVER STAIN 2)ROLL SLUG MK FM
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T333211 / 843D6687053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">55250
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .19 S: .005 P: .025 SI: .005 CB: .010 V: .001 AL: .059 TI: .002 NI: .010 CR: .020 MO: .003 N: .002 CU: .015
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">PINCHERS(STRIP)
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T440752 / 842H3513054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">21540
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .012 MN: .26 S: .004 P: .051 SI: .005 CB: .002 V: .001 AL: .051 TI: .002 NI: .010 CR: .030 MO: .008 N: .005 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141672204 / 842H3650053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0256
+							</TD>
+							<TD valign="TOP" align="center">58.2677
+							</TD>
+							<TD valign="TOP" align="center">008660
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AP632CD
+							</TD>
+							<TD valign="TOP" align="center">C: .060 MN: .41 S: .003 P: .008 SI: .077 CB: .025 V: .001 AL: .037 TI: .002 NI: .010 CR: .020 MO: .004 N: .006 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141672202 / 842H3650053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0256
+							</TD>
+							<TD valign="TOP" align="center">58.2677
+							</TD>
+							<TD valign="TOP" align="center">008740
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AP632CD
+							</TD>
+							<TD valign="TOP" align="center">C: .060 MN: .41 S: .003 P: .008 SI: .077 CB: .025 V: .001 AL: .037 TI: .002 NI: .010 CR: .020 MO: .004 N: .006 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141769501 / 831J0198006A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0256
+							</TD>
+							<TD valign="TOP" align="center">58.2677
+							</TD>
+							<TD valign="TOP" align="center">042220
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AW632CD
+							</TD>
+							<TD valign="TOP" align="center">C: .060 MN: .39 S: .004 P: .008 SI: .068 CB: .021 V: .001 AL: .028 TI: .002 NI: .010 CR: .020 MO: .005 N: .006 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">PINCHER MARKS 1 -4500  FROM ID
+							</TD>
+							<TD valign="TOP" align="center">PINCH MKS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T34500R / 831C0930003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0272
+							</TD>
+							<TD valign="TOP" align="center">37.1718
+							</TD>
+							<TD valign="TOP" align="center">27685
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .24 S: .004 P: .024 SI: .007 CB: .011 V: .001 AL: .067 TI: .002 NI: .010 CR: .020 MO: .006 N: .002 CU: .013
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DRY SB OILED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T331302 / 841E0166053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0274
+							</TD>
+							<TD valign="TOP" align="center">70.8750
+							</TD>
+							<TD valign="TOP" align="center">41500
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .047 MN: .17 S: .006 P: .011 SI: .012 CB: .002 V: .001 AL: .031 TI: .002 NI: .020 CR: .030 MO: .010 N: .005 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">PINCHERS(STRIP)
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;15CM51656 / 832E3447002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0283
+							</TD>
+							<TD valign="TOP" align="center">54.2519
+							</TD>
+							<TD valign="TOP" align="center">007730
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MADIS
+							</TD>
+							<TD valign="TOP" align="center">IH106CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .009 P: .020 SI: .009 CB: .002 V: .001 AL: .047 TI: .002 NI: .010 CR: .030 MO: .005 N: .007 CU: .014
+							</TD>
+							<TD valign="TOP" align="center">SCABS PER FF
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T39439 / 843H6273056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0284
+							</TD>
+							<TD valign="TOP" align="center">72.5000
+							</TD>
+							<TD valign="TOP" align="center">42375
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">DQSK
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .18 S: .005 P: .012 SI: .010 CB: .002 V: .001 AL: .040 TI: .002 NI: .010 CR: .030 MO: .007 N: .005 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)MK STEEL 2)POOR WINDING 3)PINHEAD SOFT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870265800 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019114
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870265700 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019466
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870144600 / Y1016943T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019819
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .094 MN:1.33 S: .006 P: .014 SI: .164 CB: .000 V: .001 AL: .043 TI: .001 NI: .000 CR: .020 MO: .002 N: .004 CU: .012
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870146100 / Y1016943T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">020106
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .094 MN:1.33 S: .006 P: .014 SI: .164 CB: .000 V: .001 AL: .043 TI: .001 NI: .000 CR: .020 MO: .002 N: .004 CU: .012
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141685202 / 812H3834003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013540
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-2
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141685102 / 812H3834004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013640
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141685201 / 812H3834003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013680
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141685101 / 812H3834004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013820
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;05CM79871 / 833E6192006A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0319
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">009210
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .006 P: .008 SI: .008 CB: .002 V: .001 AL: .038 TI: .002 NI: .010 CR: .020 MO: .003 N: .006 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR OPEN LAMS
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;05CM80541 / 833H6137002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0325
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">008350
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .050 MN: .16 S: .004 P: .008 SI: .009 CB: .002 V: .001 AL: .033 TI: .002 NI: .020 CR: .020 MO: .011 N: .006 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING RUST,REIN
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;05CM80323 / 831H0644003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0326
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">006730
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .005 P: .007 SI: .011 CB: .002 V: .001 AL: .038 TI: .002 NI: .010 CR: .030 MO: .012 N: .005 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING HEAVY LAM
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;05CM78057 / 841D1208054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0331
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">005920
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .005 P: .009 SI: .009 CB: .002 V: .001 AL: .028 TI: .002 NI: .010 CR: .030 MO: .005 N: .006 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING RUST
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;4215892.004 / 833C6367003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0331
+							</TD>
+							<TD valign="TOP" align="center">66.8148
+							</TD>
+							<TD valign="TOP" align="center">008840
+							</TD>
+							<TD valign="TOP" align="center">WORTHINGTON SPECIALTY PRODS
+							</TD>
+							<TD valign="TOP" align="center">AK163CJ
+							</TD>
+							<TD valign="TOP" align="center">C: .001 MN: .09 S: .008 P: .012 SI: .005 CB: .002 V: .003 AL: .047 TI: .053 NI: .010 CR: .020 MO: .006 N: .003 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">RESELL CROPPED PUP FOR RUST
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T435051 / 822H3648052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0365
+							</TD>
+							<TD valign="TOP" align="center">70.3750
+							</TD>
+							<TD valign="TOP" align="center">19770
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .087 MN: .47 S: .004 P: .005 SI: .009 CB: .002 V: .001 AL: .047 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870547404 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0374
+							</TD>
+							<TD valign="TOP" align="center">60.4330
+							</TD>
+							<TD valign="TOP" align="center">013775
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;870510409 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0374
+							</TD>
+							<TD valign="TOP" align="center">60.4330
+							</TD>
+							<TD valign="TOP" align="center">033860
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T399422 / 832H3347005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0406
+							</TD>
+							<TD valign="TOP" align="center">48.0000
+							</TD>
+							<TD valign="TOP" align="center">18710
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .034 MN: .17 S: .007 P: .012 SI: .009 CB: .002 V: .001 AL: .043 TI: .002 NI: .010 CR: .020 MO: .004 N: .004 CU: .013
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">STICKERS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T435521 / 823H6951056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0537
+							</TD>
+							<TD valign="TOP" align="center">51.4375
+							</TD>
+							<TD valign="TOP" align="center">15660
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">DQSK
+							</TD>
+							<TD valign="TOP" align="center">C: .055 MN: .32 S: .006 P: .012 SI: .006 CB: .002 V: .001 AL: .033 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">GOUGES OR DIGS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;T44304 / 823C7504052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0637
+							</TD>
+							<TD valign="TOP" align="center">46.4375
+							</TD>
+							<TD valign="TOP" align="center">19535
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .112 MN:1.04 S: .004 P: .012 SI: .302 CB: .002 V: .001 AL: .044 TI: .002 NI: .010 CR: .030 MO: .005 N: .005 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1141752602 / 833H6143001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0700
+							</TD>
+							<TD valign="TOP" align="center">48.0000
+							</TD>
+							<TD valign="TOP" align="center">012160
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .005 P: .008 SI: .008 CB: .002 V: .001 AL: .040 TI: .002 NI: .010 CR: .020 MO: .006 N: .006 CU: .015
+							</TD>
+							<TD valign="TOP" align="center">RUST 600 -1028  FROM ID. COIL
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;212698201B01 / 812E3007001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0709
+							</TD>
+							<TD valign="TOP" align="center">44.0945
+							</TD>
+							<TD valign="TOP" align="center">015697
+							</TD>
+							<TD valign="TOP" align="center">MILLENNIUM-PRINCETON
+							</TD>
+							<TD valign="TOP" align="center">HR220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN: .96 S: .004 P: .012 SI: .312 CB: .002 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .004 CU: .024
+							</TD>
+							<TD valign="TOP" align="center">NARROW SECTION (CAUSED BY SHAP
+							</TD>
+							<TD valign="TOP" align="center">EDGE CONV
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;F6319107 / 823H6955052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0709
+							</TD>
+							<TD valign="TOP" align="center">51.6000
+							</TD>
+							<TD valign="TOP" align="center">018660
+							</TD>
+							<TD valign="TOP" align="center">TAYLOR-STONEY CREEK
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .017 SI: .054 CB: .050 V: .001 AL: .042 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;3770553 / 4172415
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.2420
+							</TD>
+							<TD valign="TOP" align="center">13.9560
+							</TD>
+							<TD valign="TOP" align="center">012518
+							</TD>
+							<TD valign="TOP" align="center">VOSS CLARK-JEFFERSONVILLE
+							</TD>
+							<TD valign="TOP" align="center">9397
+							</TD>
+							<TD valign="TOP" align="center">C: .070 MN: .50 S: .000 P: .010 SI: .040 CB: .026 V: .001 AL: .046 TI: .002 NI: .010 CR: .040 MO: .000 N: .005 CU: .030
+							</TD>
+							<TD valign="TOP" align="center">RESELL THE COIL FOR ROLLED IN
+							</TD>
+							<TD valign="TOP" align="center">SCALE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-90712 / 961956
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0320 x 0.0320
+							</TD>
+							<TD valign="TOP" align="center">41.4769
+							</TD>
+							<TD valign="TOP" align="center">36940
+							</TD>
+							<TD valign="TOP" align="center">CLINE
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0424 MN: .2870  S: .0069  P: .0100 SI: .0123 CB: .0002  V: .0002 AL: .0426 TI: .0015  B: .00010 CR: .0322 MO: .0028 NI: .0069
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">EXCESS ON ORDER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-92290 / 955468
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0437 x 0.0437
+							</TD>
+							<TD valign="TOP" align="center">50.4290
+							</TD>
+							<TD valign="TOP" align="center">44340
+							</TD>
+							<TD valign="TOP" align="center">CLINE
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0237 MN: .1907  S: .0087  P: .0048 SI: .0050 CB: .0003  V: .0002 AL: .0480 TI: .0007  B: .00010 CR: .0248 MO: .0019 NI: .0066
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DEAD PART - COILS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-92853 / 946668
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0541 x 0.0541
+							</TD>
+							<TD valign="TOP" align="center">43.6025
+							</TD>
+							<TD valign="TOP" align="center">24700
+							</TD>
+							<TD valign="TOP" align="center">IHW - 3 C/S
+							</TD>
+							<TD valign="TOP" align="center">105  CS TYPE B
+							</TD>
+							<TD valign="TOP" align="center">C: .0573 MN: .4860  S: .0040  P: .0080 SI: .0060 CB: .0010  V: .0010 AL: .0370 TI: .0010  B: .00010 CR: .0400 MO: .0050 NI: .0060
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">COIL WEIGHT LIGHT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-92854 / 946736
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0541 x 0.0541
+							</TD>
+							<TD valign="TOP" align="center">43.6025
+							</TD>
+							<TD valign="TOP" align="center">25000
+							</TD>
+							<TD valign="TOP" align="center">IHW - 3 C/S
+							</TD>
+							<TD valign="TOP" align="center">105  CS TYPE B
+							</TD>
+							<TD valign="TOP" align="center">C: .0579 MN: .4880  S: .0068  P: .0070 SI: .0070 CB: .0010  V: .0010 AL: .0370 TI: .0010  B: .00010 CR: .0400 MO: .0020 NI: .0070
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">COIL WEIGHT LIGHT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-93472 / 961854
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0552 x 0.0552
+							</TD>
+							<TD valign="TOP" align="center">61.0000
+							</TD>
+							<TD valign="TOP" align="center">19400
+							</TD>
+							<TD valign="TOP" align="center">IHW - 3 C/S
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0291 MN: .2019  S: .0069  P: .0058 SI: .0048 CB: .0003  V: .0002 AL: .0461 TI: .0009  B: .00010 CR: .0350 MO: .0030 NI: .0073
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">EXCESS ON ORDER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;855-55074 / 844475
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0658 x 0.0658
+							</TD>
+							<TD valign="TOP" align="center">42.0404
+							</TD>
+							<TD valign="TOP" align="center">33660
+							</TD>
+							<TD valign="TOP" align="center">CLINE
+							</TD>
+							<TD valign="TOP" align="center">778  HIGH STRENGTH CHEMISTRY S
+							</TD>
+							<TD valign="TOP" align="center">C: .0882 MN:1.0020  S: .0045  P: .0100 SI: .2910 CB: .0130  V: .0020 AL: .0490 TI: .0110  B: .00020 CR: .0290 MO: .0040 NI: .0100
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">YIELD STRENGTH LOW, HARBOR TEST - DONT R
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-90714 / 853495
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0990 x 0.0990
+							</TD>
+							<TD valign="TOP" align="center">35.9375
+							</TD>
+							<TD valign="TOP" align="center">23340
+							</TD>
+							<TD valign="TOP" align="center">IHW - 3 C/S
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0204 MN: .1949  S: .0060  P: .0045 SI: .0051 CB: .0003  V: .0002 AL: .0674 TI: .0007  B: .00010 CR: .0257 MO: .0029 NI: .0096
+							</TD>
+							<TD valign="TOP" align="center">PREV. GA CHART OK
+							</TD>
+							<TD valign="TOP" align="center">EXCESS ON ORDER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;854-94662 / 962440
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0990 x 0.0990
+							</TD>
+							<TD valign="TOP" align="center">47.9375
+							</TD>
+							<TD valign="TOP" align="center">31500
+							</TD>
+							<TD valign="TOP" align="center">IHW - 3 C/S
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0403 MN: .1884  S: .0145  P: .0108 SI: .0127 CB: .0003  V: .0002 AL: .0502 TI: .0017  B: .00010 CR: .0443 MO: .0032 NI: .0105
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">COIL WEIGHT LIGHT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372967 / 635578
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">9260
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0343 MN: .1870  S: .0035  P: .0050 SI: .0120 CB: .0020  V: .0020 AL: .0510 TI: .0010  B: .00010 CR: .0160 MO: .0020 NI: .0070
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372972 / 635578
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">9880
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0343 MN: .1870  S: .0035  P: .0050 SI: .0120 CB: .0020  V: .0020 AL: .0510 TI: .0010  B: .00010 CR: .0160 MO: .0020 NI: .0070
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;1246919 / 760312
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10860
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0324 MN: .1979  S: .0081  P: .0077 SI: .0055 CB: .0005  V: .0002 AL: .0491 TI: .0006  B: .00010 CR: .0236 MO: .0038 NI: .0101
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372975 / 760312
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10860
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0324 MN: .1979  S: .0081  P: .0077 SI: .0055 CB: .0005  V: .0002 AL: .0491 TI: .0006  B: .00010 CR: .0236 MO: .0038 NI: .0101
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373010 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10874
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373006 / 635596
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10900
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0449 MN: .1820  S: .0045  P: .0050 SI: .0110 CB: .0020  V: .0010 AL: .0460 TI: .0010  B: .00010 CR: .0160 MO: .0030 NI: .0080
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SCATTERED SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373002 / 635596
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10910
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0449 MN: .1820  S: .0045  P: .0050 SI: .0110 CB: .0020  V: .0010 AL: .0460 TI: .0010  B: .00010 CR: .0160 MO: .0030 NI: .0080
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373018 / 635596
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10920
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0449 MN: .1820  S: .0045  P: .0050 SI: .0110 CB: .0020  V: .0010 AL: .0460 TI: .0010  B: .00010 CR: .0160 MO: .0030 NI: .0080
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373013 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10960
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372977 / 753339
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11000
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0319 MN: .1817  S: .0079  P: .0065 SI: .0081 CB: .0004  V: .0002 AL: .0382 TI: .0005  B: .00010 CR: .0142 MO: .0030 NI: .0061
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373014 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11000
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</form>
+<!-- End Content -->
+</html>

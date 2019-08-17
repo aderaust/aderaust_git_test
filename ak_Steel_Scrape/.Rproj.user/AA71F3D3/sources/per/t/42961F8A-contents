@@ -1,0 +1,100 @@
+library("ISLR")
+library("tidyverse")
+auto_df <- read_csv("ISL-python/datasets/Auto.csv")
+
+auto_df <- na.omit(auto_df)
+auto_df <- auto_df[,1:8]
+
+auto_df$horsepower <- as.numeric(auto_df$horsepower)
+lm_simple <- lm(mpg ~ horsepower, data = auto_df)
+
+summary(lm_simple)
+
+# there is a statistical relationship between the two variables
+
+# for every 1 unit of horse power, mileage decreases by .15 miles
+
+confint(lm_simple)
+
+# negative relationship
+
+### predicting responses
+
+predict(lm_simple, data_frame(horsepower = c(98)), interval = 'prediction')
+
+plot(auto_df$horsepower, auto_df$mpg)
+abline(lm_simple)
+
+par()
+plot(lm_simple)
+
+# relationship does not look that linear
+# the The residuals do not look to have a constant variance
+# very high leveredge points
+
+pairs(auto_df)
+
+## creating a exponential decay function
+
+lm_log <- lm(log(mpg) ~ ., data = auto_df)
+
+summary(lm_log)
+plot(lm_log)
+#############
+
+
+# question 10
+
+summary(Carseats)
+
+lm_car <- lm(Sales ~ Price + Urban + US, data = Carseats)
+
+summary(lm_car)
+
+# for a one unit increase of price, sales decrease by .05 units
+# if a store is  in the US then sales increase by 1.2 units
+
+
+lm_car_sig <- lm(Sales ~ Price + US, data = Carseats)
+
+summary(lm_car_sig)
+
+confint(lm_car_sig)
+plot(lm_car_sig)
+
+
+####   11
+
+
+x <-  rnorm(100)  
+
+y <-  2*x + rnorm(100) # creating true relationship but adding in gaussian variance
+
+sim_lm <- lm(y ~ x)
+
+summary(sim_lm)
+
+confint(sim_lm)
+plot(sim_lm)
+###
+
+set.seed(1)
+x <- rnorm(100)
+
+eps <- rnorm(100, 0, sqrt(.5))
+
+y <- -1 + .5 * x + eps
+
+plot(x,y)
+
+lm_13 <- lm(y ~x)
+summary(lm_13)
+
+plot(x, y)
+abline(lm.fit, lwd=3, col=2)
+abline(-1, 0.5, lwd=3, col=3)
+legend(-1, legend = c("model fit", "pop. regression"), col=2:3, lwd=3)
+par(c(1,1))
+
+lm_13_poly <- lm(y ~I(x^2)+x)
+summary(lm_13_poly)

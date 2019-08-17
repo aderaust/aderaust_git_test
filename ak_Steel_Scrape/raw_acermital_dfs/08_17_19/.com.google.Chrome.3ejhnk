@@ -1,0 +1,418 @@
+
+
+<HTML>
+<HEAD>
+<title>ArcelorMittal - PartnerCentre </title>
+</HEAD>
+<FORM method="post" action="inv4sale_InvConsReport.asp" name="inv4Sale">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td colspan="1" width="100%">
+					<table border="0" cellpadding="1" cellspacing="1" width="100%" class="tbI4Sheader">
+						<tr>
+						<td width="100%" align="CENTER" colspan="13"><BR><B>Online Inventory for Sale<BR>View Inventory Consolidated Report<BR>View inventory for: TARGET STEEL</B><BR>as of 8/17/2019 01:32
+						</td>
+						</tr>
+					</table>
+					<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<TR>
+<TH colspan="13" align="center"><BIG>Sorted by&nbsp;Minor Product, Business Unit, Category, Gauge, Width, Weight, Location, Grade
+</BIG></TH>
+</TR>
+						<tr>
+<TH NOWRAP width="100px" align="center">Piece ID / Ref#</TH>
+<TH width="50PX" align="center">Minor Product</TH>
+<TH width="50PX" align="center">Business Unit</TH>
+<TH width="50PX" align="center">Category</TH>
+<TH width="50PX" title="inches" align="center">Gauge</TH>
+<TH width="50PX" title="inches" align="center">Width</TH>
+<TH width="50PX" title="pounds" align="center">Weight</TH>
+<TH width="50PX" align="center">Location</TH>
+<TH width="50PX" align="center">Grade</TH>
+<TH width="50PX" align="center">Chemistry</TH>
+<TH width="50PX" align="center">Comment</TH>
+<TH width="50PX" align="center">Defect</TH>
+<TH width="50PX" align="center">Trans#</TH>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373015 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11000
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373016 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11010
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373017 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11010
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372970 / 753339
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11020
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0319 MN: .1817  S: .0079  P: .0065 SI: .0081 CB: .0004  V: .0002 AL: .0382 TI: .0005  B: .00010 CR: .0142 MO: .0030 NI: .0061
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372976 / 753339
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11020
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0319 MN: .1817  S: .0079  P: .0065 SI: .0081 CB: .0004  V: .0002 AL: .0382 TI: .0005  B: .00010 CR: .0142 MO: .0030 NI: .0061
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372991 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11020
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372988 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11100
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372995 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11100
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SCATTERED SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373001 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11100
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372986 / 753398
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11120
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0297 MN: .2052  S: .0066  P: .0063 SI: .0158 CB: .0004  V: .0005 AL: .0385 TI: .0019  B: .00010 CR: .0174 MO: .0041 NI: .0086
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373003 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11150
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372993 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11170
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;373004 / 753586
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11170
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0328 MN: .1764  S: .0058  P: .0055 SI: .0077 CB: .0010  V: .0001 AL: .0373 TI: .0008  B: .00010 CR: .0189 MO: .0037 NI: .0076
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr>
+							<TD align="center" valign="TOP">&nbsp;372966 / 753339
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">11190
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="c

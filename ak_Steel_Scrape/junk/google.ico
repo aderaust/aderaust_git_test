@@ -1,0 +1,4263 @@
+
+
+<HTML>
+<HEAD>
+<title>ArcelorMittal - PartnerCentre </title>
+
+<link href="ispat_pc.css" rel="styleSheet" type="text/css">
+<STYLE TYPE="text/css">
+  .disptble {position: absolute; left: 0pt;visibility:hidden;border:1px solid black;padding:0px"}
+</STYLE>
+
+<script src="include/dhtml.js" language="JavaScript"></script>
+<script src="include/navig.js" language="JavaScript"></script>
+<script src="include/function.js" language="JavaScript"></script>
+<script src="include/SearchScript.js" language="JavaScript" type="text/javascript"></script>
+<div id="overDiv" style="position:absolute; visibility:hide;z-index:1;"></div>
+<script src="include/overlib.js" language="JavaScript" type=""text/javascript"></script>
+<SCRIPT LANGUAGE="JavaScript" type=""text/javascript">
+<!--
+
+function I4SClick(action_value) {
+	form = document.inv4Sale;
+	form.target = "_self"
+   form.action = action_value;
+	form.submit();
+}
+
+function I4SCustRpt(action_value) {
+
+	if(spanCustRpt.disabled)
+	{
+		alert(errMSG210);	//Filtering has been modified, paging is disabled.
+		return;
+	}
+	else
+	{
+		form = document.inv4Sale;
+		form.target = "_self"
+	   form.action = action_value;
+		form.submit();
+	}
+}
+
+function I4SSend(pGotoPage) {
+
+	form = document.inv4Sale;
+	bError = false;
+
+	if (form.hidPageFunction.value == 'DISPLAY')
+		form.target = "_self"
+	else
+	{
+	form.target = "_blank"
+	}
+
+   form.action = pGotoPage;
+	form.submit();
+
+}
+
+function multiI4sinit(p_gstrMessage)
+{
+//	I4SSumPrice();
+	var NewErrWindow
+
+	displayIt();
+
+	init();
+}
+
+function displayIt() {
+     if (disptble.style.visibility == "hidden") {
+
+        disptble.style.visibility = "visible"
+	    disptble.style.display = "block"
+
+    } else {
+
+        disptble.style.visibility = "hidden"
+        disptble.style.display = "none"
+    }
+
+}
+
+function I4SPage(p_type_select, p_new_page_count, action_value) {
+
+	form = document.inv4Sale;
+
+	if(!spanPAGE1.disabled)
+	{
+		if(p_type_select != 'SELECTED')
+		{
+			form.txtPageCount.value	= p_new_page_count;
+		}
+		else if(p_new_page_count == 'SELECT1')
+		{
+			form.txtPageCount.value	= form.selPageCount1.options[form.selPageCount1.selectedIndex].value;
+		}
+		else
+		{
+			form.txtPageCount.value	= form.selPageCount2.options[form.selPageCount2.selectedIndex].value;
+		}
+		form.target = "_self";
+	   form.action = action_value;
+		form.submit();
+	}
+	else
+	{
+		alert(errMSG209);	//Filtering has been modified, paging is disabled.
+	}
+}
+
+function I4SDisablePaging(p_reset_switch)
+{
+	form = document.inv4Sale;
+	form.selPageCount1.disabled = true;
+	spanPAGE1.disabled = true;
+	spanCustRpt.disabled = true;
+
+	if(form.txtHidPieceCt.value != 0)
+	{
+		form.selPageCount2.disabled = true;
+		spanPAGE2.disabled = true;
+		form.butPRINTReport1.disabled = true;
+		form.butEXCELReport1.disabled = true;
+		form.butPRINTReport2.disabled = true;
+		form.butEXCELReport2.disabled = true;
+		form.butMySelections1.disabled = true;
+		form.butMySelections2.disabled = true;
+//		form.butCustConsReport1.disabled = true;
+//		form.butCustConsReport2.disabled = true;
+	}
+	if(p_reset_switch == 'RESET')
+	{
+		form.txtPageCount.value = 1
+	}
+}
+
+//-->
+</SCRIPT>
+
+
+</HEAD>
+<body bgcolor="#ffffff" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+
+<script language="javascript" type="text/javascript">
+  function menu_mouseover()
+  {
+  }
+  function menu_mouseout()
+  {
+  }
+  </script>
+
+<DIV id="headers" style="position: absolute; visibility: hidden; left:130px; top:20px;"></div>
+	
+<SCRIPT language="JavaScript" type="text/javascript">
+
+links = new Array();
+links[0] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/fastadvancedsearch.asp?Doc_Type=29","/PartnerCentre/doc_view.asp?doc_type=73");
+links[1] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/fastadvancedsearch.asp?doc_type=14 ","https://pc.ArcelorMittal.com/PartnerCentre/fastadvancedsearch.asp?doc_type=7","https://pc.ArcelorMittal.com/PartnerCentre/OnlineStatement.asp");
+links[2] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/inv4sale_main.asp");
+links[3] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/fastadvancedsearch.asp?doc_type=1");
+links[4] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/fastadvancedsearch.asp?doc_type=24");
+links[5] = new Array("https://pc.ArcelorMittal.com/PartnerCentre/IOM1/DefaultIOM.aspx");
+</SCRIPT>
+
+<div id='main' class='s' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'>
+<table border='1' width='130' height='600'>
+<tr><td> </td></tr>
+</table>
+<div id='main0' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Agreements</p></td></tr></table></div>
+<div id='main1' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Financial<br>Documents</p></td></tr></table></div>
+<div id='main2' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Product Availability</p></td></tr></table></div>
+<div id='main3' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Quality<br>Documents</p></td></tr></table></div>
+<div id='main4' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Shipping Documents</p></td></tr></table></div>
+<div id='main5' class='bm'><table cellpadding='3' cellspacing='0' border='0' width='128'><tr><td><p class='t'>Status / Reports</p></td></tr></table></div>
+
+</div>
+<div id='s0' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt0t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Order Acknowledgement</p></td></tr></table></div>
+<div id='bt0t1' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Processor Rates</p></td></tr></table></div>
+</div>
+<div id='s1' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt1t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Credits</p></td></tr></table></div>
+<div id='bt1t1' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Invoices</p></td></tr></table></div>
+<div id='bt1t2' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Online Statement</p></td></tr></table></div>
+</div>
+<div id='s2' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt2t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Online Inventory for Sale</p></td></tr></table></div>
+</div>
+<div id='s3' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt3t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Test Certificates</p></td></tr></table></div>
+</div>
+<div id='s4' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt4t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Packing List</p></td></tr></table></div>
+</div>
+<div id='s5' class='s'><table width='161' height='600' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td> </td></tr></table>
+<div id='bt5t0' class='b'><table cellpadding='3' cellspacing='0' border='0' width='159' onmouseover='menu_mouseover()' onmouseout='menu_mouseout()'><tr><td><p class='t'>Order Status - USA Flat</p></td></tr></table></div>
+</div>
+
+<DIV ID='SubMenu' style='position:absolute;visibility:hidden;width:128;'>
+</DIV>
+	
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td>
+	
+<table width="500" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td height="20">&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="https://pc.arcelormittal.com/PartnerCentre/premierpage.asp" class="navig">Home</a></td><td height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="https://pc.arcelormittal.com/PartnerCentre/contactus.asp" class="navig">Contact Us</a></td><td width="60" height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="https://pc.arcelormittal.com/PartnerCentre/Login/Account/ChangePassword" class="navig">User Maintenance</a></td><td height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="javascript:document.location.reload();" class="navig">Tools</a></td><td height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="javascript:document.location.reload();" class="navig">Language</a></td><td height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="middle" nowrap><a href="https://pc.arcelormittal.com/PartnerCentre/Login/Account/Logout" class="navig">Logoff</a></td></tr></table><script language="javascript" type="text/javascript">
+<!--
+posxy = new Array(20,165,305,363);
+//-->
+</script><div id="home" class="gNarrow"><img src="images/spc.gif" width="30" height="20" alt=""></div><div id="homeselect" class="ss"><table cellpadding="0" cellspacing="0" border="0" bgcolor="#999999" width="159"><tr><td><table cellpadding="0" cellspacing="1" border="0" width="161"><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/premierpage.asp">Partner Centre</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="http://corporate.arcelormittal.com">ArcelorMittal.com</a></p></td></tr></table></td></tr></table></div><div id="maint" class="gwide"><img src="images/spc.gif" width="60" height="20" alt=""></div><div id="maintselect" class="ss"><table cellpadding="0" cellspacing="0" border="0" bgcolor="#999999" width="159"><tr><td><table cellpadding="0" cellspacing="1" border="0" width="161"><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/Login/Account/ChangePassword">Change Password</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/basic_profile.asp">Profile</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/notification_add_or_delete.asp">Notification</a></p></td></tr></table></td></tr></table></div><div id="calc" class="g"><img src="images/spc.gif" width="80" height="20" alt=""></div><div id="calcselect" class="ss"><table cellpadding="0" cellspacing="0" border="0" bgcolor="#999999" width="159"><tr><td><table cellpadding="0" cellspacing="1" border="0" width="161"><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="javascript:popupwin('tools/coilODCalc.asp',730,650);">Coil OD Calculator</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="javascript:popupwin('tools/coilWeightCalc.asp',730,450);">Coil Weight Calculator</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="javascript:popupwin('tools/currencyconverter.asp',730,470);">Currency Converter</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="javascript:popupwin('tools/floorplate.asp',730,575);">Floorplate calculator</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="javascript:popupwin('tools/UnitConverter.asp',730,500);">Units Converter</a></p></td></tr></table></td></tr></table></div><div id=lang class="g"><img src="images/spc.gif" width="60" height="20" alt=""></div><div id=langselect class="ss"><table cellpadding="0" cellspacing="0" border="0" bgcolor="#999999"><tr><td><table cellpadding="0" cellspacing="1" border="0" width="161"><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/inv4sale_InvConsReport.asp?RptID=53&LangId=1">English</a></p></td></tr><tr><td bgcolor="#666666"><p class="t"><a class="menu" href="https://pc.arcelormittal.com/PartnerCentre/inv4sale_InvConsReport.asp?RptID=53&LangId=2">Français</a></p></td></tr></table></td></tr></table></div>
+	
+</td></tr>
+</table>	
+<a name="top"></a>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+   <td rowspan="2" width="130" bgCOLOR="#4682B4" STYLE="background-repeat: no-repeat;" background="images/cloudblock_1.jpg"></td>
+   <td rowspan="2" colspan="2" STYLE="background-repeat: no-repeat;" background="images/cloudblock_2.jpg">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+<td rowspan="2" height="69" align="left"><br>&nbsp;&nbsp;&nbsp;&nbsp;<font class="bigstrong" COLOR="#FFFFFF">Online Inventory for Sale</font><br>&nbsp;&nbsp;&nbsp;&nbsp;<font class="smallstrong" COLOR="#FFFFFF">View Inventory Consolidated Report</font></td><td valign="middle" align="right"><a href="premierpage.asp" title="ArcelorMittal SERVING YOU"><img src="images/am_plogo_w_neg_163x86.gif" width="163" height="86" border="0" alt="ArcelorMittal SERVING YOU"></a></td>
+	<!-- td valign="middle" align="right"><a href="premierpage.asp" title="ArcelorMittal SERVING YOU"><img src="images/am_plogo_w_neg_163x86.gif" width="163" height="86" border="0" alt="ArcelorMittal SERVING YOU"></a></td -->
+      </tr>
+      </table>
+   </td>
+</tr>
+</table>
+<!-- Begin the body table here -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td width="130" nowrap><spacer type="block" width="130"> </td>
+	<td align="left" valign="top" style="border-left: 1px solid rgb(192,192,192)">
+	<table width="100%" cellpadding="5" cellspacing="0" border="0">
+		<tr>
+		<td>
+		<p></p>
+
+<!-- Begin Content -->
+	<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+
+function makeArray()
+{
+    this[0] = makeArray.arguments.length;
+    for (i = 0; i<makeArray.arguments.length; i++)
+        this[i+1] = makeArray.arguments[i];
+}
+
+function NetscapeCapture()
+{
+//        if (document.layers)
+//        {
+//                document.captureEvents(Event.KEYUP);
+//                document.onkeyup = function (evt) 
+//                {
+//                        if (evt.target.constructor == Input)
+//                        {
+//                                if(evt.which ==13)
+//                                {
+//                                   validinfo();
+//                                }
+//                        }
+//                };
+//        
+//        }
+}
+//-->
+</SCRIPT>
+
+<Div id='popCal' style='POSITION:absolute; visibility:hidden;border:2px ridge;width:8'>
+<iframe name="popFrame" src="I4S_calendar_escape.asp"  frameborder="0" scrolling="no" width=183 height=186></iframe>
+</DIV>
+<SCRIPT language="Javascript" type="text/javascript">
+
+var errMSG200,errMSG201,errMSG202,errMSG203,errMSG204,errMSG205,errMSG206,errMSG207,errMSG208,errMSG209;var errMSG210,errMSG211,errMSG212,errMSG213,errMSG214,errMSG215,errMSG216,errMSG217,errMSG218,errMSG219,errMSG220;
+
+errMSG209 = "Changes have been made on this page, and paging has been disabled.\nPlease click Show/Save to save changes and continue paging.";
+
+errMSG210 = "Changes have been made on this page, and Customize this Report has been disabled.\nPlease click Show/Save to save changes and continue.";
+
+</SCRIPT>
+<FORM method="post" action="inv4sale_InvConsReport.asp" name="inv4Sale">
+					<table border="0" cellpadding="1" cellspacing="1" width="100%" class="tbI4Sheader">
+						<tr>
+							<td width="100%" align="left" colspan="2"><font class="smallstrong">
+							View inventory for:&nbsp;</font>
+<input type="text" name="txtBU" maxlength="12" size="12" class="tiI4Sheaderinput" value="TARGET STEEL" READONLY>
+<INPUT TYPE="hidden" NAME="RptID" VALUE="53">
+
+<INPUT TYPE="hidden" NAME="prevPage" VALUE="invInvConsRpt">
+
+<INPUT TYPE="hidden" NAME="hidPageFunction" VALUE="DISPLAY">
+
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="left" colspan="2"><B>1.&nbsp;</B>
+<a href="javascript:displayIt()" class="hrefunderline">Select Details:</a> <B>to display in report</B>
+<table id=disptble style="visibility='visible';display='block'" border="0" cellpadding="2" cellspacing="0">
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK68" NAME="cbCTK68" onClick="I4SDisablePaging('NORESET');" value="Y">Actual&nbsp;Width
+</td>
+<td>Sort Order:
+</td>
+<td>
+<select id="iSort1" name="iSort1" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8" SELECTED>Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir1" name="selSrtDir1" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir1" name="selSrtDir1" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK66" NAME="cbCTK66" onClick="I4SDisablePaging('NORESET');" value="Y">Base&nbsp;Weight
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort2" name="iSort2" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12" SELECTED>Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir2" name="selSrtDir2" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir2" name="selSrtDir2" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK88" NAME="cbCTK88" onClick="I4SDisablePaging('NORESET');" value="Y">Bid By Date
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort3" name="iSort3" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11" SELECTED>Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir3" name="selSrtDir3" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir3" name="selSrtDir3" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD12" NAME="cbADD12" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Business Unit
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort4" name="iSort4" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5" SELECTED>Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir4" name="selSrtDir4" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir4" name="selSrtDir4" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD11" NAME="cbADD11" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Category
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort5" name="iSort5" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9" SELECTED>Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir5" name="selSrtDir5" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir5" name="selSrtDir5" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK37" NAME="cbCTK37" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Al
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort6" name="iSort6" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17" SELECTED>Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir6" name="selSrtDir6" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir6" name="selSrtDir6" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK64" NAME="cbCTK64" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: B
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort7" name="iSort7" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4" SELECTED>Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir7" name="selSrtDir7" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir7" name="selSrtDir7" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK30" NAME="cbCTK30" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: C
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort8" name="iSort8" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25" SELECTED>Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0">None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir8" name="selSrtDir8" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir8" name="selSrtDir8" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK35" NAME="cbCTK35" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Cb
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort9" name="iSort9" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0" SELECTED>None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir9" name="selSrtDir9" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir9" name="selSrtDir9" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK77" NAME="cbCTK77" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Cr
+</td>
+<td>&nbsp;
+</td>
+<td>
+<select id="iSort10" name="iSort10" onChange="I4SDisablePaging('RESET');">
+<option value="CTK68">Actual<BR>Width</option>
+<option value="CTK66">Base<BR>Weight</option>
+<option value="CTK88">Bid By Date</option>
+<option value="ADD12">Business Unit</option>
+<option value="ADD11">Category</option>
+<option value="CTK37">Chem: Al</option>
+<option value="CTK64">Chem: B</option>
+<option value="CTK30">Chem: C</option>
+<option value="CTK35">Chem: Cb</option>
+<option value="CTK77">Chem: Cr</option>
+<option value="CTK75">Chem: Cu</option>
+<option value="CTK31">Chem: Mn</option>
+<option value="CTK79">Chem: Mo</option>
+<option value="CTK78">Chem: N</option>
+<option value="CTK76">Chem: Ni</option>
+<option value="CTK33">Chem: P</option>
+<option value="CTK32">Chem: S</option>
+<option value="CTK34">Chem: Si</option>
+<option value="CTK38">Chem: Ti</option>
+<option value="CTK36">Chem: V</option>
+<option value="CTK29">Chemistry</option>
+<option value="CTK20">Coating</option>
+<option value="CTK73">Coating Weight Bottom</option>
+<option value="CTK72">Coating Weight Top</option>
+<option value="CTK39">Comment</option>
+<option value="CTK28">Defect</option>
+<option value="CTK61">Defect Detail</option>
+<option value="CTK63">Defect Detail (continued)</option>
+<option value="CTK60">Edge</option>
+<option value="CTK56">Finish</option>
+<option value="CTK5">Gauge</option>
+<option value="CTK85">Gauge Range</option>
+<option value="CTK86">Gauge Type</option>
+<option value="CTK25">Grade</option>
+<option value="CTK74">Hardness</option>
+<option value="CTK41">Heat Number</option>
+<option value="CTK59">I.D.</option>
+<option value="CTK81">Internal Part Number</option>
+<option value="CTK13">Length</option>
+<option value="CTK4">Location</option>
+<option value="ADD10">Major Product</option>
+<option value="CTK67">Marks</option>
+<option value="CTK22">Mechanical Properties</option>
+<option value="ADD8">Minor Product</option>
+<option value="CTK27">Nickel Flash</option>
+<option value="CTK87">Original Piece I.D.</option>
+<option value="CTK52">Ownership</option>
+<option value="ADD13">Piece ID</option>
+<option value="CTK70">PIW</option>
+<option value="CTK82">Processor Piece ID</option>
+<option value="CTK40">Product detail description</option>
+<option value="CTK71">Product Group Code</option>
+<option value="CTK23">Specification ID</option>
+<option value="CTK65">Surface finish</option>
+<option value="CTK21">Surface Treatment</option>
+<option value="CTK69">Temper</option>
+<option value="ADD6">Trans#</option>
+<option value="CTK17">Weight</option>
+<option value="CTK9">Width</option>
+<option value="CTK80">Width Range</option>
+					  		<option value="NNN0" SELECTED>None</OPTION>
+							</select>
+</td>
+<td>&nbsp;&nbsp;<input type="radio" id="selSrtDir10" name="selSrtDir10" CHECKED value="A" onChange="I4SDisablePaging('RESET');">Asc&nbsp;&nbsp;<input type="radio" id="selSrtDir10" name="selSrtDir10" value="D" onChange="I4SDisablePaging('RESET');">Desc
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK75" NAME="cbCTK75" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Cu
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK31" NAME="cbCTK31" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Mn
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK79" NAME="cbCTK79" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Mo
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK78" NAME="cbCTK78" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: N
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK76" NAME="cbCTK76" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Ni
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK33" NAME="cbCTK33" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: P
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK32" NAME="cbCTK32" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: S
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK34" NAME="cbCTK34" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Si
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK38" NAME="cbCTK38" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: Ti
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK36" NAME="cbCTK36" onClick="I4SDisablePaging('NORESET');" value="Y">Chem: V
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK29" NAME="cbCTK29" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Chemistry
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK20" NAME="cbCTK20" onClick="I4SDisablePaging('NORESET');" value="Y">Coating
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK73" NAME="cbCTK73" onClick="I4SDisablePaging('NORESET');" value="Y">Coating Weight Bottom
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK72" NAME="cbCTK72" onClick="I4SDisablePaging('NORESET');" value="Y">Coating Weight Top
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK39" NAME="cbCTK39" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Comment
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK28" NAME="cbCTK28" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Defect
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK61" NAME="cbCTK61" onClick="I4SDisablePaging('NORESET');" value="Y">Defect Detail
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK63" NAME="cbCTK63" onClick="I4SDisablePaging('NORESET');" value="Y">Defect Detail (continued)
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK60" NAME="cbCTK60" onClick="I4SDisablePaging('NORESET');" value="Y">Edge
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK56" NAME="cbCTK56" onClick="I4SDisablePaging('NORESET');" value="Y">Finish
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK5" NAME="cbCTK5" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Gauge
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK85" NAME="cbCTK85" onClick="I4SDisablePaging('NORESET');" value="Y">Gauge Range
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK86" NAME="cbCTK86" onClick="I4SDisablePaging('NORESET');" value="Y">Gauge Type
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK25" NAME="cbCTK25" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Grade
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK74" NAME="cbCTK74" onClick="I4SDisablePaging('NORESET');" value="Y">Hardness
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK41" NAME="cbCTK41" onClick="I4SDisablePaging('NORESET');" value="Y">Heat Number
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK59" NAME="cbCTK59" onClick="I4SDisablePaging('NORESET');" value="Y">I.D.
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK81" NAME="cbCTK81" onClick="I4SDisablePaging('NORESET');" value="Y">Internal Part Number
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK13" NAME="cbCTK13" onClick="I4SDisablePaging('NORESET');" value="Y">Length
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK4" NAME="cbCTK4" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Location
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD10" NAME="cbADD10" onClick="I4SDisablePaging('NORESET');" value="Y">Major Product
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK67" NAME="cbCTK67" onClick="I4SDisablePaging('NORESET');" value="Y">Marks
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK22" NAME="cbCTK22" onClick="I4SDisablePaging('NORESET');" value="Y">Mechanical Properties
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD8" NAME="cbADD8" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Minor Product
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK27" NAME="cbCTK27" onClick="I4SDisablePaging('NORESET');" value="Y">Nickel Flash
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK87" NAME="cbCTK87" onClick="I4SDisablePaging('NORESET');" value="Y">Original Piece I.D.
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK52" NAME="cbCTK52" onClick="I4SDisablePaging('NORESET');" value="Y">Ownership
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD13" NAME="cbADD13" onClick="I4SDisablePaging('NORESET');" value="Y">Piece ID
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK70" NAME="cbCTK70" onClick="I4SDisablePaging('NORESET');" value="Y">PIW
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK82" NAME="cbCTK82" onClick="I4SDisablePaging('NORESET');" value="Y">Processor Piece ID
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK40" NAME="cbCTK40" onClick="I4SDisablePaging('NORESET');" value="Y">Product detail description
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK71" NAME="cbCTK71" onClick="I4SDisablePaging('NORESET');" value="Y">Product Group Code
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK23" NAME="cbCTK23" onClick="I4SDisablePaging('NORESET');" value="Y">Specification ID
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK65" NAME="cbCTK65" onClick="I4SDisablePaging('NORESET');" value="Y">Surface finish
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK21" NAME="cbCTK21" onClick="I4SDisablePaging('NORESET');" value="Y">Surface Treatment
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK69" NAME="cbCTK69" onClick="I4SDisablePaging('NORESET');" value="Y">Temper
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbADD6" NAME="cbADD6" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Trans#
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK17" NAME="cbCTK17" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Weight
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK9" NAME="cbCTK9" onClick="I4SDisablePaging('NORESET');" CHECKED value="Y">Width
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+<tr><td NOWRAP><input type="checkbox" ID="cbCTK80" NAME="cbCTK80" onClick="I4SDisablePaging('NORESET');" value="Y">Width Range
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="left" class="smallstrong" colspan="2"><span ID="spanCustRpt">
+<BR>2. <A class="hrefunderline" HREF="Javascript:I4SCustRpt('inv4Sale_CustConsReport.asp?RptID=53')"> Customize this Report</a></span><B> to customize the pieces that will be included in this report.</B> (optional)<BR><BR><B>3.&nbsp;</B><input type="button" value="Show / Save" id="butShowReport1" onClick="document.inv4Sale.hidPageFunction.value='DISPLAY';I4SSend('inv4sale_InvConsReport.asp')" name="butShowReport1">&nbsp;&nbsp;<input type="button" value="Print" id="butPRINTReport1" onClick="document.inv4Sale.hidPageFunction.value='PRINT';I4SSend('inv4sale_InvConsReport.asp');" name="butPRINTReport1">&nbsp;&nbsp;<input type="button" value="Excel this Page" id="butEXCELReport1" onClick="document.inv4Sale.hidPageFunction.value='EXCEL';I4SSend('inv4sale_InvConsReport.asp');" name="butEXCELReport1">&nbsp;&nbsp;<input type="button" value="Bid on My Selections" id="butMySelections1" onClick="I4SClick('inv4sale_MySelections.asp')" name="butMySelections1"></td>
+						</tr>
+						<tr>
+						<td width="100%" colspan="2" align="right">
+						<font class="small">as of
+							8/13/2019
+							11:10
+							<BR>Currency is in US$, measurements in inches, weight in pounds,<BR>Freight terms: FOB Mill.
+							<BR></font>
+							<B>Go
+							<A class="hrefunderline" HREF="Javascript:I4SClick('inv4sale_Main.asp')"> Home</a></B>
+						</td>
+						</tr>
+						<tr>
+					<td width="50%" colspan="1" align="right">&nbsp;&nbsp;Items: <input type="text" name="txtItems" maxlength="4" size="4" class="tiI4Sheaderinput" value='2420' READONLY><input type="hidden" name="errMessage" value='EMPTY'>
+						</td>
+					<td width="50%" colspan="1" align="right"><select id="selPageCount1" name="selPageCount1" ONCHANGE="I4SPage('SELECTED','SELECT1','inv4sale_InvConsReport.asp');"><OPTION value="1" SELECTED>1</OPTION><OPTION value="2">2</OPTION><OPTION value="3">3</OPTION><OPTION value="4">4</OPTION><OPTION value="5">5</OPTION><OPTION value="6">6</OPTION><OPTION value="7">7</OPTION><OPTION value="8">8</OPTION><OPTION value="9">9</OPTION><OPTION value="10">10</OPTION><OPTION value="11">11</OPTION><OPTION value="12">12</OPTION><OPTION value="13">13</OPTION><OPTION value="14">14</OPTION><OPTION value="15">15</OPTION><OPTION value="16">16</OPTION><OPTION value="17">17</OPTION><OPTION value="18">18</OPTION><OPTION value="19">19</OPTION><OPTION value="20">20</OPTION><OPTION value="21">21</OPTION><OPTION value="22">22</OPTION><OPTION value="23">23</OPTION><OPTION value="24">24</OPTION><OPTION value="25">25</OPTION><OPTION value="26">26</OPTION><OPTION value="27">27</OPTION><OPTION value="28">28</OPTION><OPTION value="29">29</OPTION><OPTION value="30">30</OPTION><OPTION value="31">31</OPTION></select> of 31 | <span ID="spanPAGE1"><A NAME="PREVPAGE" class="hrefunderline" onmouseover="window.status=''; return true" href="Javascript:I4SPage('PREV','0','inv4sale_InvConsReport.asp')">Prev</A> | <A NAME="NEXTPAGE" class="hrefunderline" onmouseover="window.status=''; return true" href="Javascript:I4SPage('NEXT','2','inv4sale_InvConsReport.asp')">Next</A></span><input type="hidden" name="hidPageCount" value='1'><input type="hidden" name="txtPageCount" value='1'>
+						</td>
+						</tr>
+					</table>
+					<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<TR>
+<TH colspan="14" align="center"><BIG>Sorted by&nbsp;Minor Product, Business Unit, Category, Gauge, Width, Weight, Location, Grade
+</BIG></TH>
+</TR>
+						<tr>
+<TH width="50px" align="center">Select</TH>
+<TH NOWRAP width="100px" align="center">Piece ID / Ref#</TH>
+<TH width="50PX" align="center">Minor Product</TH>
+<TH width="50PX" align="center">Business Unit</TH>
+<TH width="50PX" align="center">Category</TH>
+<TH width="50PX" title="inches" align="center">Gauge</TH>
+<TH width="50PX" title="inches" align="center">Width</TH>
+<TH width="50PX" title="pounds" align="center">Weight</TH>
+<TH width="50PX" align="center">Location</TH>
+<TH width="50PX" align="center">Grade</TH>
+<TH width="50PX" align="center">Chemistry</TH>
+<TH width="50PX" align="center">Comment</TH>
+<TH width="50PX" align="center">Defect</TH>
+<TH width="50PX" align="center">Trans#</TH>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="872726701">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y3569694T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="1" TITLE="872726701" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">872726701 / Y3569694T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">54.9999
+							</TD>
+							<TD valign="TOP" align="center">030250
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.18 S: .005 P: .017 SI: .150 CB: .001 V: .001 AL: .042 TI: .001 NI: .010 CR: .020 MO: .000 N: .003 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">AGED COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="286617608">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="842A3552051A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="2" TITLE="286617608" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">286617608 / 842A3552051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0378
+							</TD>
+							<TD valign="TOP" align="center">22.0590
+							</TD>
+							<TD valign="TOP" align="center">004307
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .006 P: .009 SI: .010 CB: .002 V: .001 AL: .036 TI: .002 NI: .010 CR: .020 MO: .012 N: .004 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR DROP CUT PER CHARLO
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="00498798102Z01">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823C7492053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="3" TITLE="00498798102Z01" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">00498798102Z01 / 823C7492053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010218
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .100 MN: .97 S: .003 P: .011 SI: .291 CB: .002 V: .001 AL: .049 TI: .002 NI: .010 CR: .030 MO: .009 N: .006 CU: .024
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="00498796102Z01">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="821D0467053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="4" TITLE="00498796102Z01" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">00498796102Z01 / 821D0467053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010384
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .100 MN: .97 S: .003 P: .012 SI: .305 CB: .003 V: .002 AL: .049 TI: .002 NI: .010 CR: .030 MO: .009 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="00498797102Z01">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823C7491056A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="5" TITLE="00498797102Z01" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">00498797102Z01 / 823C7491056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0394
+							</TD>
+							<TD valign="TOP" align="center">11.6142
+							</TD>
+							<TD valign="TOP" align="center">010443
+							</TD>
+							<TD valign="TOP" align="center">TOYOTA TSUSHO AMERICA INC-GE
+							</TD>
+							<TD valign="TOP" align="center">HP220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .080 MN: .93 S: .003 P: .010 SI: .291 CB: .002 V: .001 AL: .044 TI: .002 NI: .010 CR: .020 MO: .007 N: .005 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="291057008">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="813C6826008A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="6" TITLE="291057008" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">291057008 / 813C6826008A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0453
+							</TD>
+							<TD valign="TOP" align="center">23.9744
+							</TD>
+							<TD valign="TOP" align="center">005575
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-KENTON
+							</TD>
+							<TD valign="TOP" align="center">HR230CD
+							</TD>
+							<TD valign="TOP" align="center">C: .110 MN:1.05 S: .004 P: .014 SI: .284 CB: .002 V: .001 AL: .050 TI: .002 NI: .010 CR: .030 MO: .004 N: .006 CU: .026
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR OFF FALL PER CHARLO
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="9021694">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y2267364T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="7" TITLE="9021694" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">9021694 / Y2267364T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0551
+							</TD>
+							<TD valign="TOP" align="center">14.4600
+							</TD>
+							<TD valign="TOP" align="center">006958
+							</TD>
+							<TD valign="TOP" align="center">HORIZON-SHELBY TOWNSHIP
+							</TD>
+							<TD valign="TOP" align="center">GM03012
+							</TD>
+							<TD valign="TOP" align="center">C: .097 MN:1.52 S: .004 P: .018 SI: .190 CB: .001 V: .001 AL: .037 TI: .001 NI: .010 CR: .150 MO: .098 N: .004 CU: .011
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DROP CUT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T42616">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823E6527052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="8" TITLE="T42616" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T42616 / 823E6527052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0237
+							</TD>
+							<TD valign="TOP" align="center">64.7500
+							</TD>
+							<TD valign="TOP" align="center">51600
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .056 MN: .68 S: .004 P: .012 SI: .256 CB: .045 V: .002 AL: .030 TI: .002 NI: .010 CR: .030 MO: .007 N: .005 CU: .031
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)GEN BAD SHAPE 2)PINCHERS(STRIP) 3)BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T387582">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843E6236051A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="9" TITLE="T387582" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T387582 / 843E6236051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0240
+							</TD>
+							<TD valign="TOP" align="center">61.6875
+							</TD>
+							<TD valign="TOP" align="center">41860
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .056 MN: .67 S: .004 P: .016 SI: .265 CB: .047 V: .002 AL: .029 TI: .002 NI: .010 CR: .040 MO: .008 N: .005 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)ROLL SLUG MK TM 2)HOLES
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T450282">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3625001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="10" TITLE="T450282" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T450282 / 832H3625001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0250
+							</TD>
+							<TD valign="TOP" align="center">67.3750
+							</TD>
+							<TD valign="TOP" align="center">13740
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .23 S: .005 P: .022 SI: .007 CB: .012 V: .001 AL: .065 TI: .002 NI: .010 CR: .020 MO: .007 N: .003 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DAMAGE MISC
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T412211">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841H0360054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="11" TITLE="T412211" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T412211 / 841H0360054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0251
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">17630
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .21 S: .008 P: .022 SI: .007 CB: .010 V: .001 AL: .054 TI: .002 NI: .010 CR: .020 MO: .003 N: .002 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T226961">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841C1170052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="12" TITLE="T226961" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T226961 / 841C1170052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">64.3750
+							</TD>
+							<TD valign="TOP" align="center">34210
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .23 S: .004 P: .024 SI: .007 CB: .011 V: .001 AL: .070 TI: .002 NI: .010 CR: .020 MO: .013 N: .002 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)HOLES 2)ANODE BURN 3)OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T226802">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843C7495052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="13" TITLE="T226802" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T226802 / 843C7495052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">19780
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .25 S: .005 P: .022 SI: .007 CB: .011 V: .001 AL: .066 TI: .002 NI: .020 CR: .020 MO: .011 N: .002 CU: .031
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OPEN SLIVERS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T411442">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="842H3273055A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="14" TITLE="T411442" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T411442 / 842H3273055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0253
+							</TD>
+							<TD valign="TOP" align="center">66.2500
+							</TD>
+							<TD valign="TOP" align="center">27080
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .002 MN: .09 S: .007 P: .011 SI: .005 CB: .002 V: .003 AL: .064 TI: .053 NI: .010 CR: .020 MO: .006 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)RED RUST-SPKLD 2)RED RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T41190">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0155002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="15" TITLE="T41190" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T41190 / 831H0155002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">55.2500
+							</TD>
+							<TD valign="TOP" align="center">38890
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T41193">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0155003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="16" TITLE="T41193" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T41193 / 831H0155003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">55.2500
+							</TD>
+							<TD valign="TOP" align="center">39480
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T4117113">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3108004A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="17" TITLE="T4117113" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T4117113 / 832H3108004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">18970
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .008 MN: .25 S: .006 P: .053 SI: .005 CB: .002 V: .001 AL: .065 TI: .002 NI: .010 CR: .030 MO: .012 N: .004 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T4118021">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841H0155055A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="18" TITLE="T4118021" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T4118021 / 841H0155055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">23160
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .29 S: .008 P: .053 SI: .007 CB: .002 V: .001 AL: .074 TI: .002 NI: .010 CR: .030 MO: .007 N: .003 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T42272122">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841H0553055A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="19" TITLE="T42272122" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T42272122 / 841H0553055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0255
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">20700
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .012 MN: .23 S: .005 P: .055 SI: .005 CB: .002 V: .001 AL: .059 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .014
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RED RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T411851">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831E0249005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="20" TITLE="T411851" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T411851 / 831E0249005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0274
+							</TD>
+							<TD valign="TOP" align="center">56.4375
+							</TD>
+							<TD valign="TOP" align="center">50690
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .013 MN: .25 S: .007 P: .051 SI: .005 CB: .002 V: .001 AL: .056 TI: .002 NI: .020 CR: .030 MO: .006 N: .003 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T41183">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0154004A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="21" TITLE="T41183" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T41183 / 831H0154004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0275
+							</TD>
+							<TD valign="TOP" align="center">56.6875
+							</TD>
+							<TD valign="TOP" align="center">44880
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .014 MN: .24 S: .007 P: .050 SI: .005 CB: .002 V: .001 AL: .058 TI: .002 NI: .010 CR: .030 MO: .006 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T4174622">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0154002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="22" TITLE="T4174622" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T4174622 / 831H0154002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0276
+							</TD>
+							<TD valign="TOP" align="center">56.6875
+							</TD>
+							<TD valign="TOP" align="center">18580
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .014 MN: .24 S: .007 P: .050 SI: .005 CB: .002 V: .001 AL: .058 TI: .002 NI: .010 CR: .030 MO: .006 N: .003 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T42634">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3499005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="23" TITLE="T42634" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T42634 / 832H3499005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0295
+							</TD>
+							<TD valign="TOP" align="center">46.6250
+							</TD>
+							<TD valign="TOP" align="center">34920
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .050 MN: .67 S: .004 P: .007 SI: .257 CB: .046 V: .001 AL: .035 TI: .002 NI: .010 CR: .020 MO: .006 N: .005 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)CAR EDGE PATCH 2)RED RUST-PATCHS 3)BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="N28866">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823H6763055A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="24" TITLE="N28866" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">N28866 / 823H6763055A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0314
+							</TD>
+							<TD valign="TOP" align="center">56.1875
+							</TD>
+							<TD valign="TOP" align="center">22950
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .088 MN:1.51 S: .002 P: .012 SI: .303 CB: .002 V: .001 AL: .048 TI: .002 NI: .010 CR: .030 MO: .005 N: .006 CU: .026
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">CHTL BUCKLES
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="D028021">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823C6794056A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="25" TITLE="D028021" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">D028021 / 823C6794056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0400
+							</TD>
+							<TD valign="TOP" align="center">46.1875
+							</TD>
+							<TD valign="TOP" align="center">15660
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/4 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN: .48 S: .008 P: .011 SI: .007 CB: .002 V: .001 AL: .041 TI: .002 NI: .010 CR: .020 MO: .008 N: .006 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">1/4 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">QUARTER BUCKLE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T40867">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843E7112054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="26" TITLE="T40867" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T40867 / 843E7112054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0744
+							</TD>
+							<TD valign="TOP" align="center">58.1875
+							</TD>
+							<TD valign="TOP" align="center">23305
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .079 MN: .72 S: .003 P: .013 SI: .273 CB: .050 V: .002 AL: .043 TI: .002 NI: .020 CR: .040 MO: .007 N: .004 CU: .033
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">1)SLACK ANNEAL 2)GEN BAD SHAPE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T412872">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0605005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="27" TITLE="T412872" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T412872 / 831H0605005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.1328
+							</TD>
+							<TD valign="TOP" align="center">48.1875
+							</TD>
+							<TD valign="TOP" align="center">15170
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .039 MN: .15 S: .005 P: .004 SI: .006 CB: .002 V: .001 AL: .033 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">BLK RUST-PATCHS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T342611">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823E6530051A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="28" TITLE="T342611" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T342611 / 823E6530051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0242
+							</TD>
+							<TD valign="TOP" align="center">64.0625
+							</TD>
+							<TD valign="TOP" align="center">30860
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .054 MN: .65 S: .003 P: .010 SI: .244 CB: .044 V: .002 AL: .032 TI: .002 NI: .010 CR: .030 MO: .006 N: .006 CU: .017
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T441422">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841H0628054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="29" TITLE="T441422" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T441422 / 841H0628054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0251
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">55050
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .007 MN: .22 S: .007 P: .024 SI: .008 CB: .012 V: .001 AL: .067 TI: .002 NI: .010 CR: .020 MO: .004 N: .003 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)CARRYOVER STAIN 2)ROLL SLUG MK FM
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T333211">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843D6687053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="30" TITLE="T333211" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T333211 / 843D6687053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0252
+							</TD>
+							<TD valign="TOP" align="center">66.5000
+							</TD>
+							<TD valign="TOP" align="center">55250
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .19 S: .005 P: .025 SI: .005 CB: .010 V: .001 AL: .059 TI: .002 NI: .010 CR: .020 MO: .003 N: .002 CU: .015
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">PINCHERS(STRIP)
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T4176521">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3386001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="31" TITLE="T4176521" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T4176521 / 832H3386001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0253
+							</TD>
+							<TD valign="TOP" align="center">50.9375
+							</TD>
+							<TD valign="TOP" align="center">16380
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .005 MN: .20 S: .006 P: .019 SI: .005 CB: .010 V: .001 AL: .070 TI: .002 NI: .010 CR: .020 MO: .003 N: .003 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">HOLES
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T4176522">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3386001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="32" TITLE="T4176522" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T4176522 / 832H3386001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0253
+							</TD>
+							<TD valign="TOP" align="center">50.9375
+							</TD>
+							<TD valign="TOP" align="center">23850
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .005 MN: .20 S: .006 P: .019 SI: .005 CB: .010 V: .001 AL: .070 TI: .002 NI: .010 CR: .020 MO: .003 N: .003 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">WAVY EDGE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T440752">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="842H3513054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="33" TITLE="T440752" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T440752 / 842H3513054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">60.8125
+							</TD>
+							<TD valign="TOP" align="center">21540
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .012 MN: .26 S: .004 P: .051 SI: .005 CB: .002 V: .001 AL: .051 TI: .002 NI: .010 CR: .030 MO: .008 N: .005 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T379511">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841E0869051A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="34" TITLE="T379511" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T379511 / 841E0869051A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0254
+							</TD>
+							<TD valign="TOP" align="center">67.3750
+							</TD>
+							<TD valign="TOP" align="center">22800
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .008 MN: .28 S: .007 P: .054 SI: .005 CB: .002 V: .001 AL: .061 TI: .002 NI: .010 CR: .020 MO: .003 N: .002 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141672204">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="842H3650053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="35" TITLE="1141672204" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141672204 / 842H3650053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0256
+							</TD>
+							<TD valign="TOP" align="center">58.2677
+							</TD>
+							<TD valign="TOP" align="center">008660
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AP632CD
+							</TD>
+							<TD valign="TOP" align="center">C: .060 MN: .41 S: .003 P: .008 SI: .077 CB: .025 V: .001 AL: .037 TI: .002 NI: .010 CR: .020 MO: .004 N: .006 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141672202">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="842H3650053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="36" TITLE="1141672202" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141672202 / 842H3650053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0256
+							</TD>
+							<TD valign="TOP" align="center">58.2677
+							</TD>
+							<TD valign="TOP" align="center">008740
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AP632CD
+							</TD>
+							<TD valign="TOP" align="center">C: .060 MN: .41 S: .003 P: .008 SI: .077 CB: .025 V: .001 AL: .037 TI: .002 NI: .010 CR: .020 MO: .004 N: .006 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T34500R">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831C0930003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="37" TITLE="T34500R" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T34500R / 831C0930003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0272
+							</TD>
+							<TD valign="TOP" align="center">37.1718
+							</TD>
+							<TD valign="TOP" align="center">27685
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .006 MN: .24 S: .004 P: .024 SI: .007 CB: .011 V: .001 AL: .067 TI: .002 NI: .010 CR: .020 MO: .006 N: .002 CU: .013
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">DRY SB OILED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T331302">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841E0166053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="38" TITLE="T331302" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T331302 / 841E0166053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0274
+							</TD>
+							<TD valign="TOP" align="center">70.8750
+							</TD>
+							<TD valign="TOP" align="center">41500
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .047 MN: .17 S: .006 P: .011 SI: .012 CB: .002 V: .001 AL: .031 TI: .002 NI: .020 CR: .030 MO: .010 N: .005 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">PINCHERS(STRIP)
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="15CM51656">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832E3447002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="39" TITLE="15CM51656" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">15CM51656 / 832E3447002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0283
+							</TD>
+							<TD valign="TOP" align="center">54.2519
+							</TD>
+							<TD valign="TOP" align="center">007730
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MADIS
+							</TD>
+							<TD valign="TOP" align="center">IH106CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .009 P: .020 SI: .009 CB: .002 V: .001 AL: .047 TI: .002 NI: .010 CR: .030 MO: .005 N: .007 CU: .014
+							</TD>
+							<TD valign="TOP" align="center">SCABS PER FF
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T39439">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843H6273056A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="40" TITLE="T39439" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T39439 / 843H6273056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0284
+							</TD>
+							<TD valign="TOP" align="center">72.5000
+							</TD>
+							<TD valign="TOP" align="center">42375
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">DQSK
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .18 S: .005 P: .012 SI: .010 CB: .002 V: .001 AL: .040 TI: .002 NI: .010 CR: .030 MO: .007 N: .005 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">1)MK STEEL 2)POOR WINDING 3)PINHEAD SOFT
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870265800">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1067253T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="41" TITLE="870265800" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870265800 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019114
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870265700">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1067253T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="42" TITLE="870265700" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870265700 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019466
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870144600">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1016943T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="43" TITLE="870144600" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870144600 / Y1016943T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">019819
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .094 MN:1.33 S: .006 P: .014 SI: .164 CB: .000 V: .001 AL: .043 TI: .001 NI: .000 CR: .020 MO: .002 N: .004 CU: .012
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870146100">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1016943T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="44" TITLE="870146100" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870146100 / Y1016943T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0299
+							</TD>
+							<TD valign="TOP" align="center">36.2204
+							</TD>
+							<TD valign="TOP" align="center">020106
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .094 MN:1.33 S: .006 P: .014 SI: .164 CB: .000 V: .001 AL: .043 TI: .001 NI: .000 CR: .020 MO: .002 N: .004 CU: .012
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141685202">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812H3834003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="45" TITLE="1141685202" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141685202 / 812H3834003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013540
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-2
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141685102">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812H3834004A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="46" TITLE="1141685102" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141685102 / 812H3834004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013640
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141685201">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812H3834003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="47" TITLE="1141685201" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141685201 / 812H3834003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013680
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141685101">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812H3834004A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="48" TITLE="1141685101" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141685101 / 812H3834004A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0315
+							</TD>
+							<TD valign="TOP" align="center">33.4645
+							</TD>
+							<TD valign="TOP" align="center">013820
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .019 SI: .065 CB: .049 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">SPECKLED RUST ACROSS WIDTH 1-3
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="05CM79871">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="833E6192006A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="49" TITLE="05CM79871" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">05CM79871 / 833E6192006A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0319
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">009210
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .006 P: .008 SI: .008 CB: .002 V: .001 AL: .038 TI: .002 NI: .010 CR: .020 MO: .003 N: .006 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">RESELL FOR OPEN LAMS
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="05CM80541">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="833H6137002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="50" TITLE="05CM80541" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">05CM80541 / 833H6137002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0325
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">008350
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .050 MN: .16 S: .004 P: .008 SI: .009 CB: .002 V: .001 AL: .033 TI: .002 NI: .020 CR: .020 MO: .011 N: .006 CU: .023
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING RUST,REIN
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="05CM80323">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0644003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="51" TITLE="05CM80323" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">05CM80323 / 831H0644003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0326
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">006730
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .005 P: .007 SI: .011 CB: .002 V: .001 AL: .038 TI: .002 NI: .010 CR: .030 MO: .012 N: .005 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING HEAVY LAM
+							</TD>
+							<TD valign="TOP" align="center">LAMINATION
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="05CM80578">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="831H0643001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="52" TITLE="05CM80578" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">05CM80578 / 831H0643001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0329
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">040420
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .006 P: .007 SI: .016 CB: .002 V: .001 AL: .045 TI: .002 NI: .020 CR: .020 MO: .009 N: .005 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">RUST THROUGHOUT COIL,13 OFF ED
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="05CM78057">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="841D1208054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="53" TITLE="05CM78057" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">05CM78057 / 841D1208054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0331
+							</TD>
+							<TD valign="TOP" align="center">52.0471
+							</TD>
+							<TD valign="TOP" align="center">005920
+							</TD>
+							<TD valign="TOP" align="center">STEEL TECHNOLOGIES INC-MURFR
+							</TD>
+							<TD valign="TOP" align="center">IR612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .16 S: .005 P: .009 SI: .009 CB: .002 V: .001 AL: .028 TI: .002 NI: .010 CR: .030 MO: .005 N: .006 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">CAUSED FROM REMOVING RUST
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="4215892.004">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="833C6367003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="54" TITLE="4215892.004" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">4215892.004 / 833C6367003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0331
+							</TD>
+							<TD valign="TOP" align="center">66.8148
+							</TD>
+							<TD valign="TOP" align="center">008840
+							</TD>
+							<TD valign="TOP" align="center">WORTHINGTON SPECIALTY PRODS
+							</TD>
+							<TD valign="TOP" align="center">AK163CJ
+							</TD>
+							<TD valign="TOP" align="center">C: .001 MN: .09 S: .008 P: .012 SI: .005 CB: .002 V: .003 AL: .047 TI: .053 NI: .010 CR: .020 MO: .006 N: .003 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">RESELL CROPPED PUP FOR RUST
+							</TD>
+							<TD valign="TOP" align="center">RUSTSPECKL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T42633">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="822D3947054A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="55" TITLE="T42633" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T42633 / 822D3947054A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0338
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">24480
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.00 S: .004 P: .018 SI: .062 CB: .049 V: .002 AL: .037 TI: .002 NI: .020 CR: .040 MO: .008 N: .006 CU: .028
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD AND DRY
+							</TD>
+							<TD valign="TOP" align="center">EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T435051">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="822H3648052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="56" TITLE="T435051" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T435051 / 822H3648052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0365
+							</TD>
+							<TD valign="TOP" align="center">70.3750
+							</TD>
+							<TD valign="TOP" align="center">19770
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .087 MN: .47 S: .004 P: .005 SI: .009 CB: .002 V: .001 AL: .047 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">OVERPICKLED
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870547404">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1067253T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="57" TITLE="870547404" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870547404 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0374
+							</TD>
+							<TD valign="TOP" align="center">60.4330
+							</TD>
+							<TD valign="TOP" align="center">013775
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="870510409">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="Y1067253T">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="58" TITLE="870510409" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">870510409 / Y1067253T
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0374
+							</TD>
+							<TD valign="TOP" align="center">60.4330
+							</TD>
+							<TD valign="TOP" align="center">033860
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-TALLADEGA
+							</TD>
+							<TD valign="TOP" align="center">NS03008
+							</TD>
+							<TD valign="TOP" align="center">C: .086 MN:1.20 S: .007 P: .017 SI: .150 CB: .001 V: .001 AL: .045 TI: .001 NI: .000 CR: .020 MO: .000 N: .004 CU: .010
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T399422">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="832H3347005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="59" TITLE="T399422" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T399422 / 832H3347005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0406
+							</TD>
+							<TD valign="TOP" align="center">48.0000
+							</TD>
+							<TD valign="TOP" align="center">18710
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">CQ
+							</TD>
+							<TD valign="TOP" align="center">C: .034 MN: .17 S: .007 P: .012 SI: .009 CB: .002 V: .001 AL: .043 TI: .002 NI: .010 CR: .020 MO: .004 N: .004 CU: .013
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">STICKERS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1077111">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812Z4334002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="60" TITLE="R1077111" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1077111 / 812Z4334002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">018340
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .017 SI: .050 CB: .043 V: .001 AL: .040 TI: .002 NI: .010 CR: .030 MO: .006 N: .006 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1074894">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="811Z0778003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="61" TITLE="R1074894" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1074894 / 811Z0778003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">036610
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.02 S: .005 P: .016 SI: .073 CB: .044 V: .001 AL: .037 TI: .002 NI: .010 CR: .030 MO: .004 N: .004 CU: .018
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1076276">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="813Z7397002A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="62" TITLE="R1076276" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1076276 / 813Z7397002A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">036670
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN: .96 S: .005 P: .017 SI: .058 CB: .043 V: .001 AL: .042 TI: .002 NI: .010 CR: .030 MO: .003 N: .006 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1076275">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812Z4334005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="63" TITLE="R1076275" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1076275 / 812Z4334005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">037010
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .017 SI: .050 CB: .043 V: .001 AL: .040 TI: .002 NI: .010 CR: .030 MO: .006 N: .006 CU: .021
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1074893">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="813A7240005A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="64" TITLE="R1074893" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1074893 / 813A7240005A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">037360
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AP609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.04 S: .003 P: .018 SI: .054 CB: .046 V: .002 AL: .036 TI: .002 NI: .010 CR: .030 MO: .004 N: .006 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="R1074892">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="811A1329001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="65" TITLE="R1074892" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">R1074892 / 811A1329001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0486
+							</TD>
+							<TD valign="TOP" align="center">37.2500
+							</TD>
+							<TD valign="TOP" align="center">037590
+							</TD>
+							<TD valign="TOP" align="center">LCPI-LIVERPOOL COIL PROCESS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .022 SI: .069 CB: .045 V: .001 AL: .039 TI: .002 NI: .010 CR: .040 MO: .005 N: .005 CU: .027
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T435521">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823H6951056A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="66" TITLE="T435521" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T435521 / 823H6951056A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0537
+							</TD>
+							<TD valign="TOP" align="center">51.4375
+							</TD>
+							<TD valign="TOP" align="center">15660
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">DQSK
+							</TD>
+							<TD valign="TOP" align="center">C: .055 MN: .32 S: .006 P: .012 SI: .006 CB: .002 V: .001 AL: .033 TI: .002 NI: .010 CR: .020 MO: .005 N: .007 CU: .020
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">GOUGES OR DIGS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="465322">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="811E0559003A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="67" TITLE="465322" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">465322 / 811E0559003A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0551
+							</TD>
+							<TD valign="TOP" align="center">43.3070
+							</TD>
+							<TD valign="TOP" align="center">015080
+							</TD>
+							<TD valign="TOP" align="center">TAYLOR COIL PROCESSING-LORDS
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .020 SI: .062 CB: .054 V: .002 AL: .040 TI: .002 NI: .010 CR: .030 MO: .005 N: .003 CU: .015
+							</TD>
+							<TD valign="TOP" align="center">SIDEWALL DAMAGE AT IDS.WALLACE
+							</TD>
+							<TD valign="TOP" align="center">EDGE DAM
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="T44304">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823C7504052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="68" TITLE="T44304" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">T44304 / 823C7504052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0637
+							</TD>
+							<TD valign="TOP" align="center">46.4375
+							</TD>
+							<TD valign="TOP" align="center">19535
+							</TD>
+							<TD valign="TOP" align="center">BURNS HARBOR
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">C: .112 MN:1.04 S: .004 P: .012 SI: .302 CB: .002 V: .001 AL: .044 TI: .002 NI: .010 CR: .030 MO: .005 N: .005 CU: .025
+							</TD>
+							<TD valign="TOP" align="center">1/2 HARD
+							</TD>
+							<TD valign="TOP" align="center">EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1141752602">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="833H6143001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="69" TITLE="1141752602" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1141752602 / 833H6143001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0700
+							</TD>
+							<TD valign="TOP" align="center">48.0000
+							</TD>
+							<TD valign="TOP" align="center">012160
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PORTAGE
+							</TD>
+							<TD valign="TOP" align="center">IR612VD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .005 P: .008 SI: .008 CB: .002 V: .001 AL: .040 TI: .002 NI: .010 CR: .020 MO: .006 N: .006 CU: .015
+							</TD>
+							<TD valign="TOP" align="center">RUST 600 -1028  FROM ID. COIL
+							</TD>
+							<TD valign="TOP" align="center">RUST
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="212698201B01">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="812E3007001A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="70" TITLE="212698201B01" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">212698201B01 / 812E3007001A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0709
+							</TD>
+							<TD valign="TOP" align="center">44.0945
+							</TD>
+							<TD valign="TOP" align="center">015697
+							</TD>
+							<TD valign="TOP" align="center">MILLENNIUM-PRINCETON
+							</TD>
+							<TD valign="TOP" align="center">HR220CD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN: .96 S: .004 P: .012 SI: .312 CB: .002 V: .002 AL: .047 TI: .002 NI: .010 CR: .030 MO: .006 N: .004 CU: .024
+							</TD>
+							<TD valign="TOP" align="center">NARROW SECTION (CAUSED BY SHAP
+							</TD>
+							<TD valign="TOP" align="center">EDGE CONV
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="F6319107">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="823H6955052A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="71" TITLE="F6319107" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">F6319107 / 823H6955052A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0709
+							</TD>
+							<TD valign="TOP" align="center">51.6000
+							</TD>
+							<TD valign="TOP" align="center">018660
+							</TD>
+							<TD valign="TOP" align="center">TAYLOR-STONEY CREEK
+							</TD>
+							<TD valign="TOP" align="center">AR609XD
+							</TD>
+							<TD valign="TOP" align="center">C: .090 MN:1.03 S: .004 P: .017 SI: .054 CB: .050 V: .001 AL: .042 TI: .002 NI: .010 CR: .020 MO: .004 N: .005 CU: .019
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="948942200">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="843H6063053A">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="72" TITLE="948942200" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">948942200 / 843H6063053A
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.0780
+							</TD>
+							<TD valign="TOP" align="center">51.7500
+							</TD>
+							<TD valign="TOP" align="center">037005
+							</TD>
+							<TD valign="TOP" align="center">PRECISION-PERRYSBURG
+							</TD>
+							<TD valign="TOP" align="center">IK612CD
+							</TD>
+							<TD valign="TOP" align="center">C: .040 MN: .17 S: .008 P: .012 SI: .010 CB: .002 V: .001 AL: .048 TI: .002 NI: .010 CR: .020 MO: .005 N: .004 CU: .022
+							</TD>
+							<TD valign="TOP" align="center">IDENTIFIED AS EXCESS PRIME - T
+							</TD>
+							<TD valign="TOP" align="center">XM EXCESS
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="3770553">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="4172415">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="54">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="73" TITLE="3770553" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">3770553 / 4172415
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Burns Harbor
+							</TD>
+							<TD valign="TOP" align="center">Secondary
+							</TD>
+							<TD valign="TOP" align="center">0.2420
+							</TD>
+							<TD valign="TOP" align="center">13.9560
+							</TD>
+							<TD valign="TOP" align="center">012518
+							</TD>
+							<TD valign="TOP" align="center">VOSS CLARK-JEFFERSONVILLE
+							</TD>
+							<TD valign="TOP" align="center">9397
+							</TD>
+							<TD valign="TOP" align="center">C: .070 MN: .50 S: .000 P: .010 SI: .040 CB: .026 V: .001 AL: .046 TI: .002 NI: .010 CR: .040 MO: .000 N: .005 CU: .030
+							</TD>
+							<TD valign="TOP" align="center">RESELL THE COIL FOR ROLLED IN
+							</TD>
+							<TD valign="TOP" align="center">SCALE
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="853073-9390">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="853073">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="74" TITLE="853073-9390" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">853073-9390 / 853073
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0266 x 0.0293
+							</TD>
+							<TD valign="TOP" align="center">36.3550
+							</TD>
+							<TD valign="TOP" align="center">36341
+							</TD>
+							<TD valign="TOP" align="center">IHW - 80'' HSM
+							</TD>
+							<TD valign="TOP" align="center">400  DSA
+							</TD>
+							<TD valign="TOP" align="center">C: .0012 MN: .0942  S: .0063  P: .0116 SI: .0067 CB: .0017  V: .0021 AL: .0629 TI: .0583  B: .00010 CR: .0230 MO: .0035 NI: .0085
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">STRINGER COIL
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="855-55074">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="844475">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="75" TITLE="855-55074" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">855-55074 / 844475
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Reapp
+							</TD>
+							<TD valign="TOP" align="center">0.0658 x 0.0658
+							</TD>
+							<TD valign="TOP" align="center">42.0404
+							</TD>
+							<TD valign="TOP" align="center">33660
+							</TD>
+							<TD valign="TOP" align="center">CLINE
+							</TD>
+							<TD valign="TOP" align="center">778  HIGH STRENGTH CHEMISTRY S
+							</TD>
+							<TD valign="TOP" align="center">C: .0882 MN:1.0020  S: .0045  P: .0100 SI: .2910 CB: .0130  V: .0020 AL: .0490 TI: .0110  B: .00020 CR: .0290 MO: .0040 NI: .0100
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+							<TD valign="TOP" align="center">YIELD STRENGTH LOW, HARBOR TEST - DONT R
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="372967">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="635578">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="76" TITLE="372967" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">372967 / 635578
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">9260
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0343 MN: .1870  S: .0035  P: .0050 SI: .0120 CB: .0020  V: .0020 AL: .0510 TI: .0010  B: .00010 CR: .0160 MO: .0020 NI: .0070
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="372972">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="635578">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="77" TITLE="372972" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">372972 / 635578
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">9880
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0343 MN: .1870  S: .0035  P: .0050 SI: .0120 CB: .0020  V: .0020 AL: .0510 TI: .0010  B: .00010 CR: .0160 MO: .0020 NI: .0070
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="1246919">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="760312">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="78" TITLE="1246919" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">1246919 / 760312
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10860
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0324 MN: .1979  S: .0081  P: .0077 SI: .0055 CB: .0005  V: .0002 AL: .0491 TI: .0006  B: .00010 CR: .0236 MO: .0038 NI: .0101
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="372975">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="760312">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="79" TITLE="372975" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">372975 / 760312
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10860
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0324 MN: .1979  S: .0081  P: .0077 SI: .0055 CB: .0005  V: .0002 AL: .0491 TI: .0006  B: .00010 CR: .0236 MO: .0038 NI: .0101
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+						<tr><INPUT TYPE="hidden" NAME="txtHidPieceIDS" VALUE="373010">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDRefS" VALUE="669727">
+<INPUT TYPE="hidden" NAME="txtHidPieceIDBUS" VALUE="7">
+
+							<TD valign="TOP" align="center" valign="MIDDLE"> <input type="checkbox" name="chkSelect" id="chkSelect" value="80" TITLE="373010" onClick="spanCustRpt.disabled = true;">
+
+							</TD>
+							<TD align="center" valign="TOP">373010 / 669727
+							</TD>
+							<TD valign="TOP" align="center">ALL OTHER CR
+							</TD>
+							<TD valign="TOP" align="center">USA - Indiana Harbor East
+							</TD>
+							<TD valign="TOP" align="center">Salvage
+							</TD>
+							<TD valign="TOP" align="center">0.0190 x 0.0190
+							</TD>
+							<TD valign="TOP" align="center">47.8750
+							</TD>
+							<TD valign="TOP" align="center">10874
+							</TD>
+							<TD valign="TOP" align="center">AM-TAYLOR COIL  LORDSTOWN , 34
+							</TD>
+							<TD valign="TOP" align="center">CSB
+							</TD>
+							<TD valign="TOP" align="center">C: .0352 MN: .2325  S: .0078  P: .0074 SI: .0171 CB: .0006  V: .0004 AL: .0611 TI: .0010  B: .00010 CR: .0248 MO: .0044 NI: .0051
+							</TD>
+							<TD valign="TOP" align="center">LIGHT CHATTER AND SPECKLED RUST
+							</TD>
+							<TD valign="TOP" align="center">CHATTER
+							</TD>
+							<TD valign="TOP" align="center">&nbsp;
+							</TD>
+						</tr>
+					</table>
+					<table border="0" cellpadding="3" cellspacing="0" width="100%">
+						<TR>
+						<td width="50%" align="left" class="smallstrong" colspan="1"><input type="button" value="Show / Save" id="butShowReport2" onClick="document.inv4Sale.hidPageFunction.value='DISPLAY';I4SSend('inv4sale_InvConsReport.asp')" name="butShowReport2">&nbsp;&nbsp;<input type="button" value="Print" id="butPRINTReport2" onClick="document.inv4Sale.hidPageFunction.value='PRINT';I4SSend('inv4sale_InvConsReport.asp');" name="butPRINTReport2">&nbsp;&nbsp;<input type="button" value="Excel" id="butEXCELReport2" onClick="document.inv4Sale.hidPageFunction.value='EXCEL';I4SSend('inv4sale_InvConsReport.asp');" name="butEXCELReport2">&nbsp;&nbsp;<input type="button" value="Bid on My Selections" id="butMySelections2" onClick="I4SClick('inv4sale_MySelections.asp')" name="butMySelections2">&nbsp;&nbsp;</td>
+					<td width="50%" colspan="1" align="right">
+					<INPUT TYPE="hidden" NAME="txtHidPieceCt" VALUE="80">
+
+					<INPUT TYPE="hidden" NAME="txtHidDescFields" VALUE="CTK68,CTK66,CTK88,ADD12,ADD11,CTK37,CTK64,CTK30,CTK35,CTK77,CTK75,CTK31,CTK79,CTK78,CTK76,CTK33,CTK32,CTK34,CTK38,CTK36,CTK29,CTK20,CTK73,CTK72,CTK39,CTK28,CTK61,CTK63,CTK60,CTK56,CTK5,CTK85,CTK86,CTK25,CTK74,CTK41,CTK59,CTK81,CTK13,CTK4,ADD10,CTK67,CTK22,ADD8,CTK27,CTK87,CTK52,ADD13,CTK70,CTK82,CTK40,CTK71,CTK23,CTK65,CTK21,CTK69,ADD6,CTK17,CTK9,CTK80">
+<select id="selPageCount2" name="selPageCount2" ONCHANGE="I4SPage('SELECTED','SELECT2','inv4sale_InvConsReport.asp');"><OPTION value="1" SELECTED>1</OPTION><OPTION value="2">2</OPTION><OPTION value="3">3</OPTION><OPTION value="4">4</OPTION><OPTION value="5">5</OPTION><OPTION value="6">6</OPTION><OPTION value="7">7</OPTION><OPTION value="8">8</OPTION><OPTION value="9">9</OPTION><OPTION value="10">10</OPTION><OPTION value="11">11</OPTION><OPTION value="12">12</OPTION><OPTION value="13">13</OPTION><OPTION value="14">14</OPTION><OPTION value="15">15</OPTION><OPTION value="16">16</OPTION><OPTION value="17">17</OPTION><OPTION value="18">18</OPTION><OPTION value="19">19</OPTION><OPTION value="20">20</OPTION><OPTION value="21">21</OPTION><OPTION value="22">22</OPTION><OPTION value="23">23</OPTION><OPTION value="24">24</OPTION><OPTION value="25">25</OPTION><OPTION value="26">26</OPTION><OPTION value="27">27</OPTION><OPTION value="28">28</OPTION><OPTION value="29">29</OPTION><OPTION value="30">30</OPTION><OPTION value="31">31</OPTION></select> of 31 | <span ID="spanPAGE2"><A NAME="PREVPAGE2" class="hrefunderline" onmouseover="window.status=''; return true" href="Javascript:I4SPage('PREV','0','inv4sale_InvConsReport.asp')">Prev</A> | <A NAME="NEXTPAGE2" class="hrefunderline" onmouseover="window.status=''; return true" href="Javascript:I4SPage('NEXT','2','inv4sale_InvConsReport.asp')">Next</A></span></TD>
+						</TR>
+					</table>
+		</form><script language="javascript" type="text/javascript">window.onLoad = multiI4sinit('');NetscapeCapture();</script><!-- End the Body table -->
+			</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+<!-- Begin the footer -->
+<div id="ServerNameDiv" title="LUX-WWW-CC01"><br><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="130"><spacer type="block" width="130"> </td><td align="Center"><p class="small">© ArcelorMittal S.A.<br>Problems or Concerns, please contact the <a href="mailto:NA_webmaster@arcelormittal.com?subject=ArcelorMittal%20Partner%20Centre%20Inquiry" class="small"> webmaster</a><br>Last modified: 18 March 2008</p><p class="small"><a href="http://www.arcelormittal.com/index.php?lang=en&page=432" class="small">Privacy Policy</a></p></td></tr></table></div>
+</body>
+
+<!-- End Content -->
+</html>
